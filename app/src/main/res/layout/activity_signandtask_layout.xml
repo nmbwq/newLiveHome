@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@mipmap/rwzx_bgd">
+
+        <ImageView
+            android:id="@+id/setting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:src="@mipmap/ic_land_back" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="任务中心"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_appbarlayout"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_sign_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@mipmap/rwzx_bgc">
+
+                    <LinearLayout
+                        android:id="@+id/ll_day_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_day_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="45"
+                            android:textColor="#ffe588"
+                            android:textSize="45sp" />
+
+                        <TextView
+                            style="@style/color_white_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="天" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_day_number"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="累计签到"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/cv_qiandao"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@drawable/color_dialog_commit_shape26"
+                    android:paddingLeft="18dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="18dp"
+                    android:paddingBottom="16dp">
+
+                    <include layout="@layout/activity_sign_show"></include>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_sign"
+                    android:layout_width="199dp"
+                    android:layout_height="44dp"
+                    android:layout_below="@+id/cv_qiandao"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/color_dialog_commit_shape12"
+                    android:gravity="center"
+                    android:text="立即签到"
+                    android:textColor="#d0a76c"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_sign_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_sign"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="签到规则说明>>"
+                    android:textColor="#d0a76c"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_task_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/activity_user_benefits_task"></include>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

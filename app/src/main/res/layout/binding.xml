@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/bg_color_appbar_layout_black"
+        android:paddingTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/setting_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:padding="10dp"
+                android:src="@mipmap/ic_land_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/guild"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_34" />
+
+            <TextView
+                android:id="@+id/iv_add_guild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appbar"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#04ffffff">
+
+            <TextView
+                android:id="@+id/setting_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:layout_toRightOf="@id/iv_pass"
+                android:text="直播平台："
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/et_pingtai"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:layout_toEndOf="@+id/setting_pwd"
+                android:layout_toRightOf="@+id/setting_pwd"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请选择直播平台"
+                android:lines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_color_little_black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:padding="20dp"
+                android:src="@mipmap/ic_wd_more" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_videos"
+                android:layout_width="17dp"
+                android:layout_height="20.5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_wd_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:layout_toRightOf="@id/iv_videos"
+                android:text="@string/setting_video"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/switch_is_open"
+                android:layout_width="55dp"
+                android:layout_height="27dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_15"
+                android:background="@mipmap/ic_wdsz_wifioff" />
+
+            <TextView
+                android:id="@+id/switch_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px_13"
+                android:layout_toLeftOf="@id/switch_is_open"
+                android:text="@string/is_wifi_limited"
+                android:textColor="@color/text_color_little_black"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_updata"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_updata"
+                android:layout_width="17dp"
+                android:layout_height="20.5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_wdsz_update" />
+
+            <TextView
+                android:id="@+id/tv_updata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:layout_toRightOf="@id/iv_updata"
+                android:text="@string/setting_updata"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="16.5dp"
+                android:layout_toRightOf="@id/tv_updata"
+                android:src="@mipmap/ic_zx_speed" />
+
+
+            <ImageView
+                android:id="@+id/iv_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_15"
+                android:src="@mipmap/ic_wd_more" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/iv_index"
+                android:text=""
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_clsan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="#04ffffff">
+
+            <TextView
+                android:id="@+id/guild_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:layout_toRightOf="@id/iv_clsan"
+                android:text="公会名称："
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_guild_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:layout_toEndOf="@+id/guild_name"
+                android:layout_toRightOf="@+id/guild_name"
+                android:background="@null"
+                android:hint="请输入公会名称"
+                android:lines="1"
+                android:maxLength="20"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_color_little_black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="#04ffffff">
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:layout_toRightOf="@id/iv_clsan"
+                android:text="后台账号："
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:layout_toEndOf="@+id/tv_number"
+                android:layout_toRightOf="@+id/tv_number"
+                android:background="@null"
+                android:hint="请输入后台账号"
+                android:lines="1"
+                android:maxLength="20"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_color_little_black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="#04ffffff">
+
+            <TextView
+                android:id="@+id/tv_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:layout_toRightOf="@id/iv_clsan"
+                android:text="登录密码："
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:layout_toEndOf="@+id/tv_pwd"
+                android:layout_toRightOf="@+id/tv_pwd"
+                android:background="@null"
+                android:hint="请输入后台登录密码"
+                android:lines="1"
+                android:maxLength="20"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_color_little_black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_now"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="#04ffffff"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_xishu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:layout_toRightOf="@id/iv_clsan"
+                android:text="系数设置："
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_xishu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:layout_toEndOf="@+id/tv_xishu"
+                android:layout_toRightOf="@+id/tv_xishu"
+                android:background="@null"
+                android:hint="请设置（0-1）之间的系数"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:maxLength="3"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_color_little_black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_now_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp"
+            android:paddingTop="14dp"
+            android:text="注意：由于每个公会在now直播平台的提成比例不一样，所以系统还原后台收益为金币时默认按照6成（0.6）比例还原，特殊比例的公会请在0-1之间自行设置。"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/user_login_remember_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/user_login_remember_password_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_yuanjiao5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="已阅读并同意"
+                android:textColor="@color/text_color_light_yellow"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tv_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="服务协议和保密协议"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_clsan"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/btn_c2"
+            android:gravity="center"
+            android:text="提交审核"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+</RelativeLayout>

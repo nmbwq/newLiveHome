@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@mipmap/bg_heise"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        theme="@style/AppTheme.AppBarOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/bg_color_appbar_layout_black">
+
+            <ImageView
+                android:id="@+id/left_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="13dp"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="@dimen/dp_15"
+                android:paddingTop="25dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_land_back" />
+
+
+            <TextView
+                android:id="@+id/right_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="@dimen/dp_15"
+                android:layout_marginRight="10dp"
+                android:text="添加"
+                android:paddingTop="30dp"
+                android:textColor="@color/white"
+                android:layout_alignBottom="@+id/tv_title_patol"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/tv_title_patol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="我的直播平台"
+                />
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <shangri.example.com.shangri.ui.view.SpringView
+        android:id="@+id/sv_partol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_partol"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </shangri.example.com.shangri.ui.view.SpringView>
+
+    <include
+        android:id="@+id/activity_no_patrol"
+        layout="@layout/activity_no_patrol"
+        android:visibility="gone" />
+</LinearLayout>

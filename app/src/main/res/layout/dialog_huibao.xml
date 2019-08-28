@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="22dp">
+        <TextView
+            android:id="@+id/tv_huibao_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="该管理员本月，对其管理的所有主播发起的辅导总次数"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_huibao_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注意：管理员对一个主播发起2次辅导，这里记为2次。"
+            android:textColor="@color/alpha_6666_black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</FrameLayout>

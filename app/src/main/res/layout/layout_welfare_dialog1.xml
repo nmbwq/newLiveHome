@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_info"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/hongbaoclose" />
+
+    <RelativeLayout
+        android:id="@+id/rl_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/hongbaodk">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_ok"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="170dp"
+            android:text="注：您在直播之家获取的波"
+            android:textColor="#eee4c9"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="200"
+            android:textColor="#ff074f"
+            android:textSize="40sp" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="豆可直接提现成现金哦！"
+            android:textColor="#eee4c9"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/im_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="248dp"
+            android:src="@mipmap/hongbaotixianan" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

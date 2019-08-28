@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/bg_heise"
+    android:layout_height="match_parent">
+
+    <shangri.example.com.shangri.ui.view.SpringView
+        android:id="@+id/sv_partol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_partol"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </shangri.example.com.shangri.ui.view.SpringView>
+
+    <include
+        android:id="@+id/activity_no_patrol"
+        layout="@layout/activity_no_patrol"
+        android:visibility="gone" />
+</FrameLayout>

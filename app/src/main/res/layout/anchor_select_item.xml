@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    android:orientation="vertical">
+
+    <shangri.example.com.shangri.ui.view.MyTextView
+        android:id="@+id/tv_name"
+        style="@style/color_white_15"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="51dp"
+        android:paddingLeft="20dp"
+        android:text="萌妹小车" />
+</LinearLayout>

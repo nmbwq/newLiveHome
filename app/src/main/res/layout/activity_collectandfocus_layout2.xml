@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise"
+    android:orientation="vertical"
+   >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/bg_color_appbar_layout_black"
+        android:paddingTop="15dp"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/setting_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:padding="10dp"
+                android:src="@mipmap/ic_land_back" />
+
+            <!--<android.support.design.widget.TabLayout-->
+                <!--android:layout_width="170dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_toLeftOf="@+id/right_image"-->
+                <!--app:tabIndicatorColor="@color/text_color_little_orange"-->
+                <!--app:tabSelectedTextColor="@color/text_color_little_orange"-->
+                <!--app:tabTextColor="@color/text_color_light_black"-->
+                <!---->
+                <!--/>-->
+
+            <ImageView
+                android:id="@+id/iv_add_guild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/icon_tianjia" />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/right_image"
+        app:tabIndicatorColor="@color/text_color_little_orange"
+        app:tabSelectedTextColor="@color/text_color_little_orange"
+        app:tabTextColor="@color/text_color_light_black" />
+
+
+    <shangri.example.com.shangri.ui.view.CustomScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

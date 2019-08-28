@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_news_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_juxing"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="5dp">
+      
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/im_image"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:src="@mipmap/logon_icon"
+            android:scaleType="fitXY"
+            />
+
+         <TextView
+             android:id="@+id/tv_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toRightOf="@+id/im_image"
+             android:text="花椒直播"
+             style="@style/color_white_15"
+             android:layout_marginLeft="10dp"
+             />
+
+        <TextView
+            android:id="@+id/tv_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_alignParentRight="true"
+            style="@style/color_d0a76c_13"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/im_image"
+            android:text="是时下热门的手机视频直播软件。"
+            style="@style/color_999999_13"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="20dp"
+
+            />
+    </RelativeLayout>
+   
+</RelativeLayout>

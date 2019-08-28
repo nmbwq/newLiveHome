@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise"
+    android:fillViewport="false"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_app_title" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/layout_network_break"
+            layout="@layout/layout_network_break"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_net_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/bg_juxing"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lll"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/llll"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:paddingLeft="15dp"
+                                android:text="排名"
+                                android:textColor="@color/text_color_little_orange"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/tv_Fans"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:paddingLeft="15dp"
+                                android:text="昵称"
+                                android:textColor="@color/text_color_little_orange"
+                                android:textSize="11sp" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_type"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_gift"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:gravity="center"
+                                    android:text="收入增长"
+                                    android:textColor="@color/text_color_little_orange"
+                                    android:textSize="11sp" />
+
+                                <ImageView
+                                    android:id="@+id/im_type"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@mipmap/sanjiao_1" />
+
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/tv_livetime"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="开播时长(h)"
+                                android:textColor="@color/text_color_little_orange"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/tv_lncomediamond"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="粉丝增量"
+                                android:textColor="@color/text_color_little_orange"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <shangri.example.com.shangri.ui.view.SpringView
+                            android:id="@+id/search_springview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/news_entertain_irv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbars="none" />
+                        </shangri.example.com.shangri.ui.view.SpringView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <shangri.example.com.shangri.ui.view.SpringView
+        android:id="@+id/sv_send"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_send"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</shangri.example.com.shangri.ui.view.SpringView>
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/activity_empty_linshi1"
+        layout="@layout/activity_empty_linshi1" />
+</android.support.constraint.ConstraintLayout>

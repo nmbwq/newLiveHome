@@ -1,0 +1,220 @@
+package shangri.example.com.shangri.adapter;
+
+import android.content.Context;
+import android.content.Intent;
+import android.support.annotation.Nullable;
+import android.text.TextUtils;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+
+import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.chad.library.adapter.base.BaseViewHolder;
+import com.github.mikephil.charting.formatter.IFillFormatter;
+import com.zhy.view.flowlayout.TagFlowLayout;
+
+import java.util.Arrays;
+import java.util.List;
+
+import io.reactivex.Observable;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
+import shangri.example.com.shangri.R;
+import shangri.example.com.shangri.UserConfig;
+import shangri.example.com.shangri.api.RxApi;
+import shangri.example.com.shangri.api.RxHelper;
+import shangri.example.com.shangri.api.RxObserver;
+import shangri.example.com.shangri.api.RxService;
+import shangri.example.com.shangri.base.BaseListAdapter;
+import shangri.example.com.shangri.model.bean.request.Praise;
+import shangri.example.com.shangri.model.bean.response.BaseResponseEntity;
+import shangri.example.com.shangri.model.bean.response.EncyclopediaList;
+import shangri.example.com.shangri.model.bean.response.NewsBean;
+import shangri.example.com.shangri.ui.activity.LoginTypeActivity;
+import shangri.example.com.shangri.util.ActivityUtils;
+import shangri.example.com.shangri.util.GlideRoundTransform;
+import shangri.example.com.shangri.util.StartActivityUtils;
+import shangri.example.com.shangri.util.ViewHolder;
+
+public class NewsAdapter extends BaseListAdapter<NewsBean.ArticlesBean.DataBean> {
+    private Context mContext;
+    private Animation mLikeAnim;
+
+    public NewsAdapter(Context context, int layoutId, List<NewsBean.ArticlesBean.DataBean> datas) {
+        super(context, layoutId, datas);
+        mContext = context;
+        mLikeAnim = AnimationUtils.loadAnimation(context, R.anim.anim_like);
+    }
+
+
+    @Override
+    public void convert(ViewHolder helper, final NewsBean.ArticlesBean.DataBean item) {
+        final int position = helper.getAdapterPosition();
+
+        helper.setText(R.id.tv_consultaton_titel, item.getTitle());
+        helper.setText(R.id.entertain_news_like_num, item.getBrowse_amount());
+        helper.setText(R.id.entertain_news_view_count, item.getGood_amount());
+        final TextView entertain_news_view_count = helper.getView(R.id.entertain_news_view_count);
+        final ImageView iv_dian = helper.getView(R.id.iv_dian);
+        ImageView im_is_video = helper.getView(R.id.im_is_video);
+
+//        if (im_is_video!=null){
+//            if (item.getAudio_url().length() > 0) {
+//                im_is_video.setVisibility(View.VISIBLE);
+//            } else {
+//                im_is_video.setVisibility(View.GONE);
+//            }
+//        }
+
+        TagFlowLayout flowLayout = (TagFlowLayout) helper.getView(R.id.tag_fl);
+        String myString = item.getKeywords().replace("|", " ");
+        String[] split = myString.split(" ");
+        List<String> sData = Arrays.asList(split);
+
+
+        flowLayout.setAdapter(new TextAdapter(mContext, sData));
+
+
+        if (item.getRegister_good() == 0) { //未点赞
+            iv_dian.setImageResource(R.mipmap.icon_good);
+            helper.setTextColor(R.id.entertain_news_view_count, mContext.getResources().getColor(R.color.text_color_light_black));
+        } else if (item.getRegister_good() == 1) { //已点赞
+            iv_dian.setImageResource(R.mipmap.icon_good4);
+            helper.setTextColor(R.id.entertain_news_view_count, mContext.getResources().getColor(R.color.text_color_light_yellow));
+        }
+        ImageView iv_consulation_item = helper.getView(R.id.iv_consulation_item);
+
+
+        Glide.with(mContext)
+                .load(item.getCover_url())
+                .crossFade()
+                .placeholder(R.mipmap.kk_wzmrtp)
+                .transform(new GlideRoundTransform(mContext, 6))
+                .into(iv_consulation_item);
+
+        iv_dian.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                if (TextUtils.isEmpty(UserConfig.getInstance().getToken())) {
+                    StartActivityUtils.startActivity();
+                } else {
+                    String infoId = item.getId();
+                    if (item.getRegister_good() == 0) {
+                        requestPraise(infoId);// 未点赞，则点赞
+
+                        item.setRegister_good(1);
+                        String good_amount = item.getGood_amount();
+                        int good = Integer.valueOf(good_amount);
+                        int value = good + 1;
+                        item.setGood_amount(value + "");
+                        entertain_news_view_count.setTextColor(mContext.getResources().getColor(R.color.text_color_light_yellow));
+                        iv_dian.setImageResource(R.mipmap.icon_good4);
+                        entertain_news_view_count.setText(value + "");
+                    } else if (item.getRegister_good() == 1) {
+                        requestCancel(infoId); // 已点赞，则取消点赞
+                        entertain_news_view_count.setTextColor(mContext.getResources().getColor(R.color.text_color_light_black));
+                        iv_dian.setImageResource(R.mipmap.icon_good);
+                        item.setRegister_good(0);
+                        String good_amount = item.getGood_amount();
+                        int good = Integer.valueOf(good_amount);
+                        int value = good - 1;
+                        item.setGood_amount(value + "");
+                        entertain_news_view_count.setText(value + "");
+
+                    }
+
+                }
+            }
+        });
+    }
+
+    @Override
+    public void convert(ViewHolder helper, NewsBean.ArticlesBean.DataBean dataBean, List<Object> payloads) {
+
+    }
+
+
+    protected CompositeDisposable mCompositeDisposable;
+    protected RxService mRxSerivce = RxApi.getInstance().getService(RxService.class);
+
+
+    //头条点赞
+    public void requestPraise(String infoId) {
+        RxObserver rxObserver = new RxObserver<Object>() {
+            @Override
+            public void onHandleSuccess(Object resultBean) {
+
+            }
+
+            @Override
+            public void onHandleComplete() {
+            }
+
+            @Override
+            public void onHandleFailed(String message) {
+            }
+        };
+        Praise bean = new Praise();
+        bean.setToken(UserConfig.getInstance().getToken());
+        bean.setArticle_id(infoId);
+
+
+        Observable<BaseResponseEntity<Object>> observable = mRxSerivce.headPraise(bean);
+        Disposable disposable = observable
+                .compose(RxHelper.handleObservableResult())
+                .subscribeWith(rxObserver);
+        addSubscribe(disposable);
+
+    }
+
+    //   头条取消点赞
+    public void requestCancel(String infoId) {
+        RxObserver rxObserver = new RxObserver<Object>() {
+            @Override
+            public void onHandleSuccess(Object resultBean) {
+
+            }
+
+            @Override
+            public void onHandleComplete() {
+
+            }
+
+            @Override
+            public void onHandleFailed(String message) {
+
+            }
+        };
+        Praise bean = new Praise();
+        bean.setToken(UserConfig.getInstance().getToken());
+        bean.setArticle_id(infoId);
+
+
+        Observable<BaseResponseEntity<Object>> observable = mRxSerivce.headCancel(bean);
+        Disposable disposable = observable
+                .compose(RxHelper.handleObservableResult())
+                .subscribeWith(rxObserver);
+        addSubscribe(disposable);
+
+    }
+
+    /**
+     * 添加
+     *
+     * @param disposable
+     */
+    protected void addSubscribe(Disposable disposable) {
+        if (mCompositeDisposable == null) {
+            mCompositeDisposable = new CompositeDisposable();
+        }
+        mCompositeDisposable.add(disposable);
+    }
+
+}

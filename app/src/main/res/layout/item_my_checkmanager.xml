@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/bg_juxing"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:layout_marginTop="10dp"
+            >
+
+
+            <shangri.example.com.shangri.ui.view.CircleImageView
+                android:id="@+id/im_image"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/im_up"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bg_touxiang" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/im_image"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="美好的^_^"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_platfrom"
+                    style="@style/color_white_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="直播平台：映客直播" />
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    style="@style/color_999999_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="ID：123569852"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="已同意"
+                    android:textColor="#d0a76c"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_going"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_resuse"
+                        android:layout_width="50dp"
+                        android:layout_height="23dp"
+                        android:background="@drawable/color_rejust_shape"
+                        android:gravity="center"
+                        android:text="拒绝"
+                        android:textColor="#d0a76c"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_commit"
+                        android:layout_width="50dp"
+                        android:layout_height="23dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/color_commit_shape"
+                        android:gravity="center"
+                        android:text="同意"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_refuse"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="已拒绝"
+                        android:textColor="#db3334"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_refuse_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="理由：您的信息不是正确的hh。"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

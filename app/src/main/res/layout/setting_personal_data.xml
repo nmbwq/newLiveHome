@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@mipmap/bg_heise"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_title_appbarlayout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/bg_juxing"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:text="头像"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp" />
+
+            <shangri.example.com.shangri.ui.view.CircleImageView
+                android:id="@+id/mine_profile_image"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/bg_touxiang" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_color_little_dark_gray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:text="昵称"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp" />
+
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/ic_wd_more" />
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="昵称"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv1"
+                android:paddingRight="20dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_color_little_dark_gray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_sex"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:text="性别"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp" />
+
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/ic_wd_more" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="女"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv2"
+                android:paddingRight="20dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_color_little_dark_gray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_autograph"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:text="签名"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp" />
+
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/ic_wd_more" />
+
+            <TextView
+                android:id="@+id/tv_autograph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="你好"
+                android:maxEms="12"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv3"
+                android:paddingRight="20dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_color_little_dark_gray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_bing_phone"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:text="绑定手机号"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp" />
+
+
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:visibility="invisible"
+                android:src="@mipmap/ic_wd_more" />
+
+            <TextView
+                android:id="@+id/tv_bing_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="1384555"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv4"
+                android:paddingRight="20dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_color_little_dark_gray" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

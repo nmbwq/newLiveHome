@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise"
+    android:fitsSystemWindows="false">
+
+    <LinearLayout
+        android:id="@+id/main_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/nav_boss_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <RelativeLayout
+                android:id="@+id/rl10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical">
+
+
+                <ImageView
+                    android:id="@+id/nav_boss_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/huibao_1" />
+
+                <TextView
+                    android:id="@+id/nav_boss_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nav_boss_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="招聘"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_20" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nav_news_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/nav_news_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_kankani" />
+
+            <TextView
+                android:id="@+id/nav_news_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_news_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/main_news"
+                android:textColor="@color/text_color_light_yellow"
+                android:textSize="@dimen/text_size_20" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/nav_communique_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/rl9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical">
+
+
+                <ImageView
+                    android:id="@+id/nav_communique_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/zq" />
+
+                <TextView
+                    android:id="@+id/nav_communique_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nav_communique_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="赚钱"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_20" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/nav_management_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/nav_management_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_gongbao2" />
+
+            <TextView
+                android:id="@+id/nav_management_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_management_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/make_money"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/nav_mine_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/nav_mine_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_wode" />
+
+                <TextView
+                    android:id="@+id/nav_mine_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nav_mine_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/main_my"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_20" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_no_readmessage_number"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@+id/rl_1"
+                android:background="@drawable/selector_red_bg"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="6sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/main_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/main_tab_layout"
+        android:background="@color/alpha_05_black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_divider">
+
+        <FrameLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/im_welfare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/fuchuanglxj"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/ll_musice_info"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/color_dialog_commit_shape31"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:id="@+id/im_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:src="@mipmap/kk_ypgb" />
+
+            <ImageView
+                android:id="@+id/im_image"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/im_close"
+                android:src="@mipmap/bg_touxiang" />
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/color_white_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/im_image"
+                android:text="如何有效的提升主播人气？" />
+
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/im_image"
+                android:text="2018-12-07"
+                android:textColor="#c3c3c3"
+                android:textSize="10sp" />
+
+
+            <shangri.example.com.shangri.ui.view.CircleProgressImageView
+                android:id="@+id/iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!--<android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_tab_layout"
+        android:layout_below="@id/main_title_bar" />-->
+
+
+</RelativeLayout>

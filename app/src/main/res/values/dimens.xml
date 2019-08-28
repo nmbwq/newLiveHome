@@ -1,0 +1,74 @@
+<resources>
+    <dimen name="toolbar_padding_top">15dp</dimen>
+
+    <dimen name="px_1">1px</dimen>
+    <dimen name="px_3">3px</dimen>
+    <dimen name="px_5">5px</dimen>
+    <dimen name="px_7">7px</dimen>
+    <dimen name="px_9">9px</dimen>
+    <dimen name="px_11">11px</dimen>
+    <dimen name="px_13">13px</dimen>
+    <dimen name="px_15">15px</dimen>
+    <dimen name="px_19">19px</dimen>
+    <dimen name="px_21">21px</dimen>
+    <dimen name="px_25">25px</dimen>
+    <dimen name="px_27">27px</dimen>
+    <dimen name="px_29">29px</dimen>
+    <dimen name="px_31">31px</dimen>
+    <dimen name="px_33">33px</dimen>
+
+    <dimen name="title_height">50dp</dimen>
+    <dimen name="head_height">280dp</dimen>
+
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_7">7dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_9">9dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_11">11dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_13">13dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_17">17dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_19">19dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_21">21dp</dimen>
+    <dimen name="dp_23">23dp</dimen>
+    <dimen name="dp_29">29dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="dp_43">43dp</dimen>
+    <dimen name="dp_304">304dp</dimen>
+<!-- 文字的尺寸大小 -->
+    <dimen name="text_size_20">10sp</dimen>
+    <dimen name="text_size_22">11sp</dimen>
+    <dimen name="text_size_24">12sp</dimen>
+    <dimen name="text_size_26">13sp</dimen>
+    <dimen name="text_size_28">14sp</dimen>
+    <dimen name="text_size_30">15sp</dimen>
+    <dimen name="text_size_32">16sp</dimen>
+    <dimen name="text_size_34">17sp</dimen>
+    <dimen name="text_size_40">20sp</dimen>
+    <dimen name="dp25">25dp</dimen>
+    <dimen name="sp38">38sp</dimen>
+    <dimen name="dp24">24dp</dimen>
+
+
+    <!-- 日历定义的一些尺寸 -->
+
+    <!--新的日历定义的尺寸-->
+    <dimen name="calendar_day_headers_paddingbottom">4dp</dimen>
+    <dimen name="calendar_month_topmargin">16dp</dimen>
+    <dimen name="calendar_month_title_bottommargin">4dp</dimen>
+    <dimen name="calendar_text_medium">18sp</dimen>
+    <dimen name="calendar_text_small">14sp</dimen>
+    <dimen name="dimen_margin_circle">4dp</dimen>
+
+
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mengban_1"
+    android:paddingLeft="37dp"
+    android:paddingRight="37dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:id="@+id/ll_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_delete"
+            android:background="@drawable/color_dialog_cancle_shape16"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="24dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="24dp">
+
+
+            <TextView
+                android:id="@+id/tv_content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="拨电话"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:text="发布职位赠送福利"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_cancle"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/bg_kuang2"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#cf9a57"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_next"
+                    style="@style/color_white_14"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/bg_kuang1"
+                    android:gravity="center"
+                    android:text="充值" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

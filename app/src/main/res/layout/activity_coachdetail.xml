@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_heise">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/bg_color_appbar_layout_black"
+        android:paddingTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/setting_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:padding="10dp"
+                android:src="@mipmap/ic_land_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="辅助详情"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_34" />
+
+            <TextView
+                android:id="@+id/tv_warn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:text="提醒查看"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <shangri.example.com.shangri.ui.view.MyScrollview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:paddingLeft="31dp"
+            android:paddingRight="31dp"
+            android:background="@mipmap/fudao_di"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <shangri.example.com.shangri.ui.view.CircleImageView
+                    android:id="@+id/im_photo"
+                    android:layout_width="67dp"
+                    android:layout_height="67dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/bg_touxiang"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_anchors_name"
+                    style="@style/color_white_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@+id/im_photo"
+                    android:text="19988小丸子"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_guild_name"
+                    style="@style/color_white_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_anchors_name"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/im_photo"
+                    android:text="公会名称：菠萝街（COCO）"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/color_999999_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="辅导日期：2018-03-21  18:36" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    style="@style/color_white_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="发出" />
+
+                <TextView
+                    android:id="@+id/tv_send_type"
+                    style="@style/color_d0a76c_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/tv1"
+                    android:text="我" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/color_white_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="优秀：" />
+
+                <com.fyales.tagcloud.library.TagCloudLayout
+                    android:id="@+id/tag_cloud_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tv_merit_more"
+                    app:lineSpacing="10dp"
+                    app:tagSpacing="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/color_white_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="不足：" />
+
+                <com.fyales.tagcloud.library.TagCloudLayout
+                    android:id="@+id/tag_cloud_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tv_merit_more"
+                    app:lineSpacing="10dp"
+                    app:tagSpacing="15dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_comment"
+                style="@style/color_white_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="点评：今日的表现是很好的，跟以前相比较的bcvb dfgdfg dfgdce出你的手机号收到数据恢复计划的时间发货华山风景爱上你就按双方将按时发货撒金凤凰就开始考虑积分" />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_video_hiden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <shangri.example.com.shangri.ui.view.CircleImageView
+                    android:id="@+id/tv_send_photo"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/bg_touxiang" />
+
+                <LinearLayout
+                    android:id="@+id/ll_start_video"
+                    android:layout_width="200dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/duihua_1"
+                    >
+                    <ImageView
+                        android:id="@+id/im_text"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_time_second"
+                    style="@style/color_white_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/show_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_read_number"
+                    style="@style/color_999999_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="已读： 1/2" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/read_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tv_read_number" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </shangri.example.com.shangri.ui.view.MyScrollview>
+</RelativeLayout>

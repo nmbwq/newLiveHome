@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="shangri.example.com.shangri">
+
+    <uses-permission android:name=" android.permission.FALSHLIGHT" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 极光推送这个一定要加的 -->
+    <permission
+        android:name="shangri.example.com.shangri.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <!-- 这个必须加入（记得一定要换成自己的包名），不加极光推送不能成功 -->
+    <uses-permission android:name="shangri.example.com.shangri.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- <uses-sdk -->
+    <!-- android:minSdkVersion="16" -->
+    <!-- android:targetSdkVersion="23" /> -->
+    <application
+        android:name=".base.GlobalApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logon_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppCompatTheme"
+        tools:replace="android:icon, android:theme">
+
+        <!-- WelcomeActivity -->
+        <activity
+            android:name=".ui.activity.WelcomeActivity"
+            android:theme="@style/AppCompatTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- html唤醒app -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:pathPrefix="/android"
+                    android:scheme="launchapp"
+                    tools:ignore="AppLinkUrlError" />
+            </intent-filter>
+        </activity>
+        <!-- Umeng分享 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5af1061ef29d9872050001b2" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="UMConfigure.DEVICE_TYPE_PHONE" />
+
+        <activity
+            android:name=".ui.activity.LoginTypeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompatTheme" />
+        <activity
+            android:name=".ui.activity.LoginUserActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompatTheme" />
+        <activity
+            android:name=".ui.activity.NewLoginUserActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppCompatTheme" />
+        <!-- 注册界面 -->
+        <activity android:name=".ui.activity.RegisterActivity" />
+        <!-- 广告页面 -->
+        <activity android:name=".ui.activity.AdActivity" />
+        <!-- 微信注册界面 -->
+        <activity android:name=".ui.activity.RegisterSignActivity" />
+        <!-- 选择身份界面 -->
+        <activity
+            android:name=".ui.activity.SoftwareActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.activity.ForgetPasswordActivity" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.ToutiaoSearchActivity" />
+        <activity android:name=".ui.activity.MySettingActivity" />
+        <activity android:name=".ui.activity.PasswordConfirmActivity" />
+        <activity
+            android:name=".ui.activity.UserFeedBackActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" /> <!-- 没效果 -->
+        <!-- <activity android:name="ui.activity.CommonIssueActivity" /> -->
+        <activity android:name=".ui.activity.MsgDetailActivity" />
+        <activity android:name=".ui.activity.MyvipActivity" />
+        <activity
+            android:name=".ui.activity.NewsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.ActivityWeiXin" />
+        <!-- 微信支付 -->
+        <activity android:name=".ui.activity.PayActivity" />
+        <activity android:name=".ui.activity.AcitivityAboutUs" />
+        <activity android:name=".ui.webview.ActivityWebView" />
+        <!-- //在音频界面跳转的web界面    没有浏览数以及赞的数 -->
+        <activity android:name=".ui.webview.ActivityWebView1" />
+        <!-- 普通的webview -->
+        <activity android:name=".ui.webview.symbolWebView" />
+        <activity android:name=".ui.activity.AvatarActivity" />
+        <activity android:name=".ui.activity.SetPasswordActivity" />
+        <activity android:name=".ui.activity.UpdatePwdActivity" />
+        <activity android:name=".ui.activity.SplashActivity" />
+        <!-- <activity android:name="ui.activity.UserFBActivity"/> -->
+        <activity android:name=".ui.activity.MyGuildActivity" />
+        <!-- 主播付费我的公会列表 -->
+        <activity android:name=".ui.activity.AnchorPayMyGuildActivity" />
+        <activity android:name=".ui.activity.BindingGuildActivity" />
+        <activity android:name=".ui.activity.BindingActivity" />
+        <activity android:name=".ui.activity.BindingGuildeTypectivity" />
+        <activity android:name=".ui.activity.GuildListActivity" />
+        <activity
+            android:name=".ui.activity.LaunchPatrolActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.activity.ChoiceGuildActivity" />
+        <activity
+            android:name=".ui.activity.ChoiceAnchorsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".ui.activity.AudioPlayActivity" />
+        <activity android:name=".ui.activity.JoinGuildActivity" />
+        <activity
+            android:name=".ui.activity.InterlocutionActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.activity.ActivityLookDetails"
+            android:theme="@style/AppCompatTheme" />
+        <activity
+            android:name=".ui.activity.SettingPersonalDataActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.activity.MyPlatfromActivity" />
+        <activity android:name=".ui.activity.MyPlatfromAddActivity" />
+        <activity android:name=".ui.activity.ActivityParticipateTask" />
+        <activity android:name=".ui.activity.MyTaskActivity" />
+        <activity android:name=".ui.activity.ParticipationTaskActivity" />
+        <activity android:name=".ui.activity.ActivityParticipateHuiTask" />
+        <activity android:name=".ui.activity.PeixunSearchActivity" />
+        <activity android:name=".ui.activity.MyCollectActivity" />
+        <!-- 百科列表 -->
+        <activity android:name=".ui.activity.BkplatfromActivity" />
+        <!-- 我要入驻 -->
+        <activity android:name=".ui.activity.JoinEncyclopediaActivity" />
+        <!-- 我要入驻 -->
+        <activity android:name=".ui.activity.WikiSearchActivity" />
+        <!-- 百科web界面 -->
+        <!-- 我的关注 -->
+        <activity android:name=".ui.activity.MyFocusActivity" />
+        <!-- 辅导详情 -->
+        <activity android:name=".ui.activity.EoachDetailActivity" />
+        <!-- 放大图片 -->
+        <activity android:name=".ui.activity.ZoomImgActivity" />
+        <!-- 无公会或是公司界面 -->
+        <activity android:name=".ui.activity.ChectIsHaveActivity" />
+        <!-- 创建公司界面 -->
+        <activity android:name=".ui.activity.CreatCityActivity" />
+
+        <!-- 公司架构含有公司和公会 -->
+        <activity android:name=".ui.activity.CompamyInfoActivity" />
+        <!-- 公司通讯录列表 -->
+        <activity android:name=".ui.activity.MyCompanyTelephoneActivity" />
+        <!-- 我的名片 -->
+        <activity android:name=".ui.activity.CallingCardActivity" />
+        <!-- 主播审核列表 -->
+        <activity android:name=".ui.activity.AnchorChectListActivity" />
+        <!-- 管理员审核列表 -->
+        <activity android:name=".ui.activity.ManagerChectListActivity" />
+
+        <!-- 公司列表界面 -->
+        <activity android:name=".ui.activity.CompanyListActivity" />
+        <!-- 公司详情界面 -->
+        <activity android:name=".ui.activity.OtherCoachListActivity" />
+        <!-- 任务详情界面 -->
+        <activity android:name=".ui.activity.NewTaskDetailActivity" />
+        <!-- 执行人界面 -->
+        <activity android:name=".ui.activity.TaskStateActivity" />
+        <!-- 执行人搜索界面 -->
+        <activity android:name=".ui.activity.SerchTaskStatemanActivity" />
+        <!-- 发布任务界面界面 -->
+        <activity android:name=".ui.activity.ActivityAddNewTask" />
+        <!-- 发布任务选择提醒日期界面 -->
+        <activity android:name=".ui.activity.AlertDateListActivity" />
+        <!-- 对执行人发布任务分量界面 -->
+        <activity android:name=".ui.activity.SelectManActivity" />
+        <!-- 公司搜索 -->
+        <activity android:name=".ui.activity.CompanySerchmanActivity" />
+        <!-- 看其他人任务 -->
+        <activity android:name=".ui.activity.OtherTaskListActivity" />
+        <!-- 任务分配量选择界面 -->
+        <activity android:name=".ui.activity.SerchTaskFenpeiActivity" />
+        <!-- 消息界面 -->
+        <activity android:name=".ui.activity.NewMessageActivity" />
+        <!-- 支付界面 -->
+        <activity android:name=".ui.activity.SelectPayActivity" />
+        <!-- 法务首页面 -->
+        <activity android:name=".ui.activity.SignActivity" />
+        <!-- 法务我的套餐列表 -->
+        <activity android:name=".ui.activity.ComboListActivity" />
+        <!-- 法务充值套餐页面 -->
+        <activity android:name=".ui.activity.LegalPayActivity" />
+        <!-- 我的合同列表界面 -->
+        <activity android:name=".ui.activity.MyCompactActivity" />
+        <!-- 合同详情界面 -->
+        <activity android:name=".ui.activity.CompactDetail" />
+        <!-- 合同详情web界面 -->
+        <activity android:name=".ui.activity.CompactWebView.CompactDetailWebview" />
+        <!-- 会长合同填写web界面 -->
+        <activity android:name=".ui.activity.CompactWebView.AddCompactlWebviewOne" />
+        <!-- 会长合同填写第二个界面 -->
+        <activity android:name=".ui.activity.CompactWebView.AddCompactTwo" />
+        <!-- 签合同 -->
+        <activity
+            android:name=".ui.activity.CompactWebView.CompactSignWebview"
+            android:launchMode="singleTask" />
+        <!-- 合同模板列表界面 -->
+        <activity android:name=".ui.activity.CompactMobanListActivity" />
+
+        <!-- boss沟通以及收藏 -->
+        <activity android:name=".ui.activity.MyBossCollectActivity" />
+
+        <!-- 身份证认证界面 -->
+        <activity android:name=".ui.activity.IDCardActivity" />
+        <!-- 会长认证总界面 -->
+        <activity android:name=".ui.activity.CompanyIdent" />
+        <!-- 认证公司营业执照界面 -->
+        <activity android:name=".ui.activity.BusinesIdentsetail" />
+        <!-- 人脸检测 -->
+        <activity android:name=".ui.activity.FaceLivenessExpActivity" />
+        <!-- 身份认证第二个界面 -->
+        <activity android:name=".ui.activity.IdentIdCardSecondetail" />
+        <!-- 身份认证第一个界面 -->
+        <activity android:name=".ui.activity.IdentIdCardOneetail" />
+
+        <!-- 选择日期界面 -->
+        <activity android:name=".ui.activity.MydateActivity" />
+
+        <!-- 图表测试 -->
+
+
+        <!-- 图标点击详情进入 -->
+        <activity android:name=".ui.activity.LookDetailActivity" />
+        <!-- 会长快速绑定公会 -->
+        <activity android:name=".ui.activity.FastBindingActivity" />
+        <!-- 快速绑定选择平台 -->
+        <activity android:name=".ui.activity.FastGuildListActivity" />
+
+        <!-- 升级公会 -->
+        <activity android:name=".ui.activity.UpgradeGuildeActivity" />
+
+        <!-- 只有已绑定的快速公会 -->
+        <activity android:name=".ui.activity.FastGuileSelectListActivity" />
+        <!-- 重新认证公会 -->
+        <activity android:name=".ui.activity.VerifyBindingActivity" />
+
+        <!-- 我的主播优化版本 -->
+        <activity android:name=".ui.activity.NewMyAnchorActivity" />
+        <!-- 点击公会跳转的主播列表界面 -->
+        <activity android:name=".ui.activity.MyAnchorGuanliAcvity" />
+        <!-- 添加主播 -->
+        <activity android:name=".ui.activity.AddAnchorActivity" />
+
+        <!-- 主播当庭公会分类界面 -->
+        <activity android:name=".ui.activity.BindingAnchorGuildeTypectivity" />
+        <!-- 主播快速绑定公会 -->
+        <activity android:name=".ui.activity.FastAnchorBindingActivity" />
+        <!-- 主播绑定所有平台列表 -->
+        <activity android:name=".ui.activity.MyAnchorBindingAcvity" />
+        <!-- 管理员添加公会分类界面 -->
+        <activity android:name=".ui.activity.BindingManagerTypectivity" />
+
+        <!-- 管理界面 -->
+        <activity android:name=".ui.activity.MyManagerActivity" />
+
+        <!-- 报表界面会长搜索主播 -->
+        <activity android:name=".ui.activity.SerchAnchorActivity" />
+        <!-- 仿京东选择地址 -->
+        <activity android:name=".ui.activity.JinDongSelectCityActivity" />
+        <!-- 招聘详情界面 -->
+        <activity android:name=".ui.webview.BossWebView" />
+        <!-- 主播招聘详情界面 -->
+        <activity android:name=".ui.webview.AnchorBossWebView" />
+        <!-- 主播招聘详情界面2 -->
+        <activity android:name=".ui.webview.AnchorBossWebView2" />
+        <!-- 上传简历 -->
+        <activity android:name=".ui.activity.AddInviteActivity" />
+        <!-- 有简历界面 -->
+        <activity
+            android:name=".ui.activity.HaveInviteActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 收藏招聘界面 -->
+        <activity android:name=".ui.activity.MyCollectResumeActivity" />
+        <!-- 卡片模式选择测试 -->
+        <activity android:name=".CardSelectView.CardTextActivity" />
+        <!-- //报表载体 -->
+        <activity android:name=".ui.activity.MyFreagmentActivity" />
+        <!-- //已沟通载体 -->
+        <activity android:name=".ui.activity.HaveGouTongTitleCollectActivity" />
+        <!-- 会长发布职位 -->
+        <activity
+            android:name=".ui.activity.AddJobActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 添加公司信息 -->
+        <activity android:name=".ui.activity.AddCompanyInfoActivity" />
+
+        <!-- 公司职位描述 -->
+        <activity android:name=".ui.activity.ComDescriptionActivity" />
+        <!-- 职位列表数据 -->
+        <activity android:name=".ui.activity.ZhiweiListActivity" />
+        <!-- 职位详情界面 -->
+        <activity android:name=".ui.webview.ZhiWeiWebView" />
+        <activity android:name=".ui.webview.EncyclopediaActivityWebView" />
+        <!-- 主播投递接口 -->
+        <activity android:name=".ui.activity.AnchorDropListActivity" />
+        <!-- 会长沟通界面 -->
+        <activity android:name=".ui.activity.ChairLinkupListActivity" />
+        <!-- 简历详情界面 -->
+        <activity android:name=".ui.activity.AnchorDropDetailActivity" />
+        <!-- 不考虑职位列表 -->
+        <activity android:name=".ui.activity.NoLikeListListActivity" />
+
+        <!-- 测试布局成图片 -->
+        <activity android:name=".ui.activity.TextLayoutChangeImageView" />
+
+        <!-- 在招聘页面点击官方职位以及日周结专区页面 -->
+        <activity android:name=".ui.activity.InviteTypeActivity" />
+
+        <!-- 我要报名界面 -->
+        <activity android:name=".ui.webview.ApplyWebView" />
+        <!-- 主播详情界面 -->
+        <activity
+            android:name=".ui.webview.AnchorDetailWebView"
+            android:screenOrientation="portrait" />
+        <!-- 主播有简历web页面 -->
+        <activity
+            android:name=".ui.webview.HaveResumeWebView"
+            android:screenOrientation="portrait" />
+        <!-- 评论详情web页面 -->
+        <activity
+            android:name=".ui.webview.CommentDetailWebView"
+            android:screenOrientation="portrait" />
+        <!-- 测试web页面 -->
+        <activity
+            android:name=".ui.webview.TextWebView"
+            android:screenOrientation="portrait" />
+        <!--有title的webview-->
+        <activity
+            android:name=".ui.webview.symbolHaveTitleWebView"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 会长沟通主播付费界面 -->
+        <activity android:name=".ui.activity.SelectPayNumberActivity" />
+        <!-- 图片可以左右划动的主播详情界面 -->
+        <activity android:name=".ui.activity.LookAnchorDetailActivity" />
+        <!-- // 有简历的页面 -->
+        <activity android:name=".ui.activity.ChangeAnchorDetailActivity" />
+        <!-- // 我的看客服页面 -->
+        <activity android:name=".ui.activity.MyCustomerServiceActivity" />
+        <!-- // 解决问题界面 -->
+        <activity android:name=".ui.activity.DetailQuestionActivity" />
+        <!-- // 看过我的公司 -->
+        <activity android:name=".ui.activity.LookMeCompanyListActivity" />
+        <!-- // 主播身份已投递界面 -->
+        <activity android:name=".ui.activity.HasDeliverActivity" />
+        <!-- // 收藏和关注在一个界面-->
+        <activity android:name=".ui.activity.MyCollectAndFocusActivity" />
+        <!-- // 主播身份  公会绑定和快速绑定公会在同一个界面-->
+        <activity android:name=".ui.activity.AnchorNewMyGuildActivity" />
+        <!-- 等级规则界面-->
+        <activity android:name=".ui.activity.GradeRulesActivity" />
+        <!-- 签到和任务界面-->
+        <activity android:name=".ui.activity.SignAndTaskActivity" />
+        <!-- 签到规则界面-->
+        <activity android:name=".ui.activity.SignRulesActivity" />
+        <!-- 邀请规则界面-->
+        <activity android:name=".ui.activity.InvateRulesActivity" />
+
+        <!-- 主播邀请界面-->
+        <activity android:name=".ui.activity.AnchorInvateActivity" />
+
+        <!-- 改版后的会长和主播波币界面-->
+        <activity android:name=".ui.activity.BoBiActivity" />
+        <!-- 约聊界面-->
+        <activity android:name=".ui.activity.TellAboutListActivity" />
+
+        <!--升级职位栏-->
+        <activity android:name=".ui.activity.UpgradePostBarActivity" />
+        <!--新升等级界面-->
+        <activity android:name=".ui.activity.UpgradeActivity1" />
+        <!--大转盘页面-->
+        <activity android:name=".ui.webview.ShareWebView" />
+
+        <!--报表以及公会数据合并界面 -->
+        <activity android:name=".ui.activity.GuildAndDateMergeActivity" />
+
+        <!--头条activity界面 -->
+        <activity android:name=".ui.activity.TitleArticleActivity" />
+
+        <!--会长端点击全部 热门 最新  的item跳转的页面 -->
+        <activity android:name=".ui.activity.ClickItemListActivity" />
+
+
+        <meta-data
+            android:name="shangri.example.com.shangri.util.FileGlideModule"
+            android:value="GlideModule" />
+        <!-- 微信登录 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity android:name=".ui.activity.BoundTelActivity" />
+        <activity android:name=".ui.activity.InputPasswordActivity" />
+        <activity android:name=".ui.activity.GetVerifyCodeActivity" />
+        <activity android:name=".ui.activity.UpdateCityActivity" />
+        <activity android:name=".ui.activity.AnchoDetailActivity" />
+        <!-- 支付宝支付 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 微信支付 -->
+        <activity
+            android:name=".weixin.WXPayCallbackActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity-alias
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity=".weixin.WXPayCallbackActivity" />
+
+        <!-- 下面是激光推送用的信息 -->
+
+
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle" />
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="shangri.example.com.shangri" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="false"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- since 3.0.9 Required SDK 核心功能 -->
+        <provider
+            android:name="cn.jpush.android.service.DataProvider"
+            android:authorities="shangri.example.com.shangri.DataProvider"
+            android:exported="false" />
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="shangri.example.com.shangri" />
+            </intent-filter>
+        </service>
+        <!-- since 3.1.0 Required SDK 核心功能 -->
+        <provider
+            android:name="cn.jpush.android.service.DownloadProvider"
+            android:authorities="shangri.example.com.shangri.DownloadProvider"
+            android:exported="true" />
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="shangri.example.com.shangri" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".jpush.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="shangri.example.com.shangri" />
+            </intent-filter>
+        </receiver>
+
+        <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调 -->
+        <receiver android:name=".jpush.MyJPushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+
+                <category android:name="shangri.example.com.shangri" />
+            </intent-filter>
+        </receiver>
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="805d76bee5e34b52a0931d82" /> <!-- </>值来自开发者平台取得的AppKey -->
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="670" />
+
+        <activity android:name=".ui.activity.MoreArticlesActivity" />
+        <!-- 消息跳转 -->
+        <activity android:name=".ui.webview.MessagesWebView" />
+        <!-- 消息 -->
+        <activity android:name=".ui.activity.MessagesActivity" />
+        <!-- 会长-简历管理 -->
+        <activity android:name=".ui.activity.ResumeManageActivity" />
+        <!-- 会长福利 -->
+        <activity android:name=".ui.activity.WelfareActivity" />
+        <!-- 公司预览页 -->
+        <activity android:name=".ui.activity.CompanyHomepageActivityTwo" />
+        <!-- 公司主页 -->
+        <activity android:name=".ui.activity.CompanyHomepageActivity" />
+        <activity android:name=".ui.activity.GuildManagerActivity" />
+        <!-- 购买明细 -->
+        <activity android:name=".ui.activity.BuyDetailActivity" />
+        <!-- 添加明星 -->
+        <activity
+            android:name=".ui.activity.AddStarAnchorActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 公司入驻平台 -->
+        <activity
+            android:name=".ui.activity.EnterPlatformActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 红包福利 -->
+        <activity android:name=".ui.activity.RedEnvelopeWelfareActivity" />
+        <!-- 用户福利 -->
+        <activity android:name=".ui.activity.UserBenefitsActivity" />
+        <!-- 收支明细 -->
+        <activity android:name=".ui.activity.DetailsActivity" />
+        <!-- 基本信息 -->
+        <activity
+            android:name=".ui.activity.AddCompanyInfoActivity2"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 公司认证 -->
+        <activity android:name=".ui.activity.CompanyCertificationActivity" />
+        <!-- 上传公司相册 -->
+        <activity android:name=".ui.activity.AddCompanyPhotoActivity" />
+        <!-- 主播收藏 -->
+        <activity android:name=".ui.activity.HostCollectionActivity" />
+        <!-- 剩余次数 -->
+        <activity android:name=".ui.activity.RemainderActivity" />
+        <!-- 新消息页面 -->
+        <activity android:name=".ui.activity.MessagesActivityNew" />
+        <!-- VIP页面 -->
+        <activity android:name=".ui.activity.VIPActivity" />
+        <!-- VIP购买明细 -->
+        <activity android:name=".ui.activity.BuyVIPDetailActivity" />
+        <!-- 波豆余额 -->
+        <activity android:name=".ui.activity.VirtualCoinActivity"></activity>
+        <!--虚拟币明细-->
+        <activity android:name=".ui.activity.BDDetailActivity"></activity>
+    </application>
+
+</manifest>

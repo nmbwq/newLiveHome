@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/bg_color_appbar_layout_black"
+        android:paddingTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/setting_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:padding="10dp"
+                android:src="@mipmap/ic_land_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="职位收藏"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_34" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/layout_network_break"
+            layout="@layout/layout_network_break"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_net_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <shangri.example.com.shangri.ui.view.SpringView
+                    android:id="@+id/search_springview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/search_irv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                </shangri.example.com.shangri.ui.view.SpringView>
+
+                <include
+                    android:id="@+id/activity_empty_linshi1"
+                    layout="@layout/activity_empty_linshi1"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:id="@+id/search_not_found"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/im_image"
+                        android:layout_width="180dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/sousuo_kong" />
+
+                    <TextView
+                        android:id="@+id/tv_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/search_not_found"
+                        android:textColor="#ebebeb"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

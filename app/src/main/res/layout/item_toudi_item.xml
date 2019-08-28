@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_news_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="#04ffffff">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="13dp"
+        android:paddingLeft="19dp"
+        android:paddingRight="18dp"
+        android:paddingTop="17dp">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/im_hot"
+                android:layout_width="13dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/remen_xin" />
+
+
+            <TextView
+                android:id="@+id/tv_anchor_name"
+                style="@style/color_white_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/im_hot"
+                android:text="知名主播"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_xianxia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_anchor_name"
+                android:background="@drawable/color_dialog_commit_shape12"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:text="dfhsh"
+                android:textColor="#d0a76c"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/tv_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_xianxia"
+                android:background="@drawable/color_dialog_commit_shape12"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:text="sdfsf"
+                android:textColor="#d0a76c"
+                android:textSize="9sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tv_plat_name"
+                style="@style/color_white_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="花椒直播" />
+
+            <TextView
+                android:id="@+id/tv_welface"
+                style="@style/color_999999_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_plat_name"
+                android:text="五险一金  |  年假" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/rl_number"
+            android:background="#666666" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_number"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rl12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                >
+
+                <TextView
+                    android:id="@+id/tv_noread"
+                    android:layout_width="28dp"
+                    android:layout_height="14dp"
+                    android:layout_toRightOf="@+id/tv_sum"
+                    android:background="@mipmap/tuo"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="#dbb566"
+                    android:textSize="7sp"
+                    android:layout_marginTop="2dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_sum"
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_noread"
+                    android:layout_centerHorizontal="true"
+                    android:text="10" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/color_999999_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl12"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="主播投递" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

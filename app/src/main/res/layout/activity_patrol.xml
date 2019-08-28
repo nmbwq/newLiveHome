@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/layout_network_break"
+            layout="@layout/layout_network_break"
+            android:visibility="invisible" />
+
+
+        <FrameLayout
+            android:id="@+id/rl_net_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/fl_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:paddingRight="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_all"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_down0_text"
+                                    style="@style/color_999999_13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="全部"
+                                    android:textColor="#d0a76c" />
+
+                                <TextView
+                                    android:id="@+id/tv_down0"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="3dp"
+                                    android:background="#d0a76c" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_my"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_down1_text"
+                                    style="@style/color_999999_13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="我发出的" />
+
+                                <TextView
+                                    android:id="@+id/tv_down1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="3dp"
+                                    android:background="#d0a76c"
+                                    android:visibility="invisible" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_guanliyun"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_down2_text"
+                                    style="@style/color_999999_13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="管理员发出" />
+
+                                <TextView
+                                    android:id="@+id/tv_down2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="3dp"
+                                    android:background="#d0a76c"
+                                    android:visibility="invisible" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="14dp"
+                            android:layout_marginTop="14dp"
+                            android:background="@color/white" />
+
+                        <RelativeLayout
+                            android:id="@+id/ll_select_sociaty"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="4dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_shuaixun"
+                                    style="@style/color_white_14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="筛选公会" />
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:src="@mipmap/filter" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="44dp"
+                        android:background="@mipmap/bg_juxing"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="44dp">
+
+
+                        <shangri.example.com.shangri.ui.view.SpringView
+                            android:id="@+id/sv_partol"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rv_partol"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </shangri.example.com.shangri.ui.view.SpringView>
+
+
+                        <ImageView
+                            android:id="@+id/new_im_show"
+                            android:layout_width="120dp"
+                            android:layout_height="43dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="50dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/woyao_fabu" />
+                    </RelativeLayout>
+
+
+                    <include
+                        android:id="@+id/activity_empty_linshi1"
+                        layout="@layout/activity_empty_linshi1"
+                        android:visibility="gone" />
+
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/no_city_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/appbar"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/new_tv_layout_image"
+                            android:layout_width="180dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:id="@+id/new_tv_layout_contont1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="28dp"
+                            android:text="您还没有公司呢，赶紧创建一个吧！"
+                            android:textColor="#c5c5c5"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/new_tv_layout_contont2"
+                            android:layout_width="150dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:background="@mipmap/anniu_chuanjian"
+                            android:gravity="center"
+                            android:text="创建公司"
+                            android:textColor="@color/white"
+                            android:textSize="17sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/activity_guoqi_layout"
+                layout="@layout/activity_guoqi_layout"
+                android:visibility="gone" />
+
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</FrameLayout>

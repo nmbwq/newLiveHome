@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#455A64</color>
+    <color name="colorPrimaryDark">#263238</color>
+    <color name="colorAccent">#D50000</color>
+
+
+    <!-- 线条颜色 -->
+    <color name="divider_color_vertical">#dedede</color>
+    <color name="divider_color_horizontal">#f2f2f2</color>
+    <!-- 登录输入框下划线颜色 -->
+    <color name="et_underline_selected">#aca9a9</color>
+    <color name="et_underline_unselected">#989598</color>
+    et_underline_selected.xml
+    <!-- 背景颜色 -->
+    <color name="bg_color_white">#ffffff</color>
+    <color name="bg_color_gray">#f2f2f2</color>
+    <color name="bg_color_light_gray">#f5f5f5</color>
+    <color name="bg_color_little_gray">#a9a9a9</color>
+    <color name="bg_color_appbar_layout_black">#242425</color>
+    <color name="bg_color_setting">#3b3b3b</color>
+    <color name="bg_04ffffff">#04ffffff</color>
+    <color name="bg_color_item_bg">#3c3c3d</color>
+    <!-- 分割线颜色 -->
+    <color name="bg_color_little_dark_gray">#2f2f2f</color>
+    <!-- 字体颜色 -->
+    <color name="text_color_light_yellow">#d19e59</color>
+    <color name="text_color_light_black">#999999</color>
+    <color name="text_color_little_black">#666666</color>
+    <color name="text_color_middle_black">#333333</color>
+    <color name="text_color_light_gray">#b2b2b2</color>
+    <color name="text_color_white">#ffffff</color>
+    <color name="text_color_light_orange">#bc8f57</color>
+    <color name="text_color_little_orange">#cf9a57</color>
+    <color name="text_color_ok_orange">#cf9a57</color>
+    <color name="text_color_dark_black">#202020</color>
+    <color name="text_color_black">#000000</color>
+    <color name="text_color_little_gray">#cccccc</color>
+    <color name="text_color_light_white">#fffefe</color>
+    <color name="text_color_login_white">#fefefe</color>
+    <!--//分割线颜色-->
+    <color name="cut_line_color">#1c1c1c</color>
+    <color name="text_color_8a4801">#8a4801</color>
+    <color name="text_color_task">#d0a76c</color>
+    <!-- 控件颜色 -->
+    <color name="toast_bg">#dddfe0</color>
+    <!-- 审核颜色 -->
+    <color name="text_color_audit">#b79356</color>
+    <color name="text_color_pass">#17ad03</color>
+    <color name="text_color_error">#fb2626</color>
+    <color name="text_color_success">#d2aa72</color>
+
+    <color name="text_color_787878"> #787878</color>
+    <color name="text_color_725819"> #725819</color>
+
+    <!-- 公报 -->
+    <color name="text_color_archor">#e3e3e3</color>
+    <!-- 线颜色 -->
+    <color name="text_color_line">#1b1b1b</color>
+    <!-- 线颜色 -->
+    <color name="ddba69">#ddba69</color>
+    <!--新的选择时间需要的-->
+    <color name="calendar_active_month_bg">#fff5f7f9</color>
+    <color name="calendar_bg">#ffffffff</color>
+    <color name="calendar_divider">#1a1a1a</color>
+    <color name="calendar_inactive_month_bg">#1a1a1a</color>
+    <color name="calendar_selected_day_bg">#ff379bff</color>
+    <color name="calendar_highlighted_day_bg">#ccffcc</color>
+    <color name="calendar_selected_range_bg">#ff96caff</color>
+    <color name="calendar_text_inactive">#40778088</color>
+    <color name="calendar_text_active">#ff778088</color>
+    <color name="calendar_text_selected">#ffffffff</color>
+    <color name="calendar_text_unselectable">#7f778088</color>
+
+    <!--//每个日期背景颜色-->
+    <color name="custom_background">#262627</color>
+    <color name="custom_background_today">#FFF7D890</color>
+    <!--//每个月没用的日期背景颜色-->
+    <color name="custom_background_disabled">#262627</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="color_666666">#666666</color>
+</resources>

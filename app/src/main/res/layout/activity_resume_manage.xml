@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_color_appbar_layout_black"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ResumeManageActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_appbar_layout_black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_marginTop="32dp"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="@dimen/dp_15"
+                android:src="@mipmap/ic_land_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_marginTop="32dp"
+                android:gravity="center_vertical"
+                android:text="简历管理"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_34" />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_toLeftOf="@+id/right_image"
+        app:tabTextColor="@color/text_color_light_black"
+        app:tabSelectedTextColor="@color/text_color_little_orange"
+        app:tabIndicatorColor="@color/text_color_little_orange"/>
+    <!--<RadioGroup-->
+        <!--android:id="@+id/radio_group"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="@color/colorPrimaryDark"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rb_iou"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:button="@null"-->
+            <!--android:gravity="center"-->
+            <!--android:text="主播投递"-->
+            <!--android:textColor="@color/text_color_light_gray"-->
+            <!--android:textSize="@dimen/sp_14" />-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rb_new"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:button="@null"-->
+            <!--android:gravity="center"-->
+            <!--android:text="沟通过"-->
+            <!--android:textColor="@color/text_color_light_gray"-->
+            <!--android:textSize="@dimen/sp_14" />-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rb_mine1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:button="@null"-->
+            <!--android:gravity="center"-->
+            <!--android:text="拨电话"-->
+            <!--android:textColor="@color/text_color_light_gray"-->
+            <!--android:textSize="@dimen/sp_14" />-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rb_mine"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:button="@null"-->
+            <!--android:gravity="center"-->
+            <!--android:text="留电话"-->
+            <!--android:textColor="@color/text_color_light_gray"-->
+            <!--android:textSize="@dimen/sp_14" />-->
+    <!--</RadioGroup>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

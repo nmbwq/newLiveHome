@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise"
+    android:orientation="vertical">
+
+
+    <shangri.example.com.shangri.ui.view.MyScrollview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/head"
+                android:layout_toRightOf="@+id/head"
+                android:background="@color/bg_color_appbar_layout_black">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp">
+
+                    <ImageView
+                        android:id="@+id/setting_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/dp_12"
+                        android:layout_marginTop="32dp"
+                        android:paddingLeft="@dimen/dp_15"
+                        android:paddingRight="@dimen/dp_15"
+                        android:src="@mipmap/ic_land_back" />
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/dp_12"
+                        android:layout_marginTop="32dp"
+                        android:gravity="center_vertical"
+                        android:text="合同详情"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_32" />
+
+
+                </RelativeLayout>
+            </android.support.design.widget.AppBarLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/appbar"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="#04ffffff"
+                    android:orientation="vertical"
+                    android:paddingBottom="33dp"
+                    android:paddingLeft="19dp"
+                    android:paddingRight="21dp"
+                    android:paddingTop="22dp">
+
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/color_white_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="艺人网络演出合作双方共同的协议" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+
+                        <TextView
+                            android:id="@+id/tv_end_time"
+                            style="@style/color_999999_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="签署截止日期：2018-06-20"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_state"
+                            style="@style/color_white_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@mipmap/fawu_anniu"
+                            android:gravity="center"
+                            android:text="已完成" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_beizhu"
+                        style="@style/color_white_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="备注：一定记得在截止日期之前签掉合同，不然合同就没有法律效应的。" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#04ffffff"
+                    android:paddingLeft="19dp"
+                    android:paddingRight="19dp">
+
+                    <TextView
+                        android:id="@+id/tv_name_three"
+                        style="@style/color_white_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/xuanze_lianxiren1"
+                        android:gravity="center"
+                        android:text="我" />
+
+                    <TextView
+                        android:id="@+id/tv_name_four"
+                        style="@style/color_white_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv_name_three"
+                        android:text="的就是疯狂" />
+
+
+                    <LinearLayout
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_time1"
+                            style="@style/color_999999_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2018-05-18" />
+
+                        <TextView
+                            style="@style/color_d0a76c_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="已签署" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#04ffffff"
+                    android:paddingLeft="19dp"
+                    android:paddingRight="19dp">
+
+                    <TextView
+                        android:id="@+id/tv_name_one"
+                        style="@style/color_white_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/xuanze_lianxiren1"
+                        android:gravity="center"
+                        android:text="我" />
+
+                    <TextView
+                        android:id="@+id/tv_name_two"
+                        style="@style/color_white_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv_name_one"
+                        android:text="的就是疯狂" />
+
+
+                    <LinearLayout
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            style="@style/color_999999_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2018-05-18"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_down_state"
+                            style="@style/color_d0a76c_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:text="已签署" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </shangri.example.com.shangri.ui.view.MyScrollview>
+
+</RelativeLayout>

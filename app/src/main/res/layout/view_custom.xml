@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/color_dialog_999999" />
+
+    <ImageView
+        android:id="@+id/custom_icon"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="2dp" />
+
+
+    <ImageView
+        android:id="@+id/custom_icon1"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="2dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/custom_icon1"
+        android:layout_toRightOf="@id/custom_icon"
+        android:orientation="vertical"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:paddingTop="3dp">
+
+            <TextView
+                android:id="@+id/tv_custom_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="title"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_custom_time"
+                style="@style/NotificationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:text="3:00"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_custom_content"
+            style="@style/NotificationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxEms="50"
+            android:singleLine="true"
+            android:text="content"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_web_content"
+            style="@style/NotificationContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:ellipsize="end"
+            android:maxEms="50"
+            android:paddingBottom="3dp"
+            android:singleLine="true"
+            android:text="asdfhsjh 是京东发货速度和据搜狐风尚大奖即使对方是金沙江分=="
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

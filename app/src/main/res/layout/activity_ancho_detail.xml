@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.AnchoDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_appbar_layout_black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="@dimen/dp_15"
+                android:paddingTop="30dp"
+                android:src="@mipmap/ic_land_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_marginTop="32dp"
+                android:gravity="center_vertical"
+                android:text="主播明细详情"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_34" />
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_marginTop="32dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:text="移除"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bg_heise"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/dp_20">
+
+                <shangri.example.com.shangri.ui.view.CircleImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/bg_touxiang" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ancho_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="加载中"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_platform"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="left"
+                        android:text="加载中"
+                        android:textColor="@color/alpha_6666_black"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="left"
+                        android:text="ID:加载中"
+                        android:textColor="@color/alpha_6666_black"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_income_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_incomt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="right"
+                        android:text="魅力值"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_incomt_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="right"
+                        android:text="主播在此直播平台的总魅力值"
+                        android:textColor="@color/alpha_6666_black"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#04ffffff"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="15dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_select"
+                            style="@style/color_white_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="日数据 2018年7月23日" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/sanjiao_xia" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#04ffffff"
+                android:paddingBottom="27dp"
+                android:paddingTop="12dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/juxing_xiangyou">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/im_left_sanjiao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/sanjiao_zuo" />
+
+                        <TextView
+                            android:id="@+id/tv_left_time"
+                            style="@style/color_white_14"
+                            android:layout_width="13dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="前一天" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/juxing_xiangzuo">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_right_time"
+                            android:layout_width="13dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="后一天"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/im_right_sanjiao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/sanjiao_you" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tv_now_day"
+                            style="@style/color_999999_11"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:paddingTop="3dp"
+                            android:text="今日实时"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:text="0"
+                                android:textColor="#d0a76c"
+                                android:textSize="35sp" />
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tv_yi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="top"
+                                    android:gravity="right"
+                                    android:text="亿"
+                                    android:textColor="#d0a76c"
+                                    android:textSize="12sp"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/tv_number_qianwan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="5dp"
+                                    android:text="2222."
+                                    android:textColor="#d0a76c"
+                                    android:textSize="35sp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+
+                            <TextView
+                                android:id="@+id/tv_number_wan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=".0 万"
+                                android:textColor="#d0a76c"
+                                android:textSize="12sp"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="占空间"
+                        android:visibility="invisible"></TextView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_meili"
+                    style="@style/color_999999_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="魅力值增长" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:background="#14000000" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_anchor_biaoge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#04ffffff"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll5"
+                    android:layout_width="0dp"
+                    android:layout_height="85dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv5"
+                        style="@style/color_white_15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/tv25"
+                        style="@style/color_999999_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="开播时长" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#14000000" />
+
+                <LinearLayout
+                    android:id="@+id/ll6"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv6"
+                        style="@style/color_white_15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/tv26"
+                        style="@style/color_999999_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="粉丝增长" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#14000000" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll7"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv7"
+                        style="@style/color_white_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/tv27"
+                        style="@style/color_999999_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="本月" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@mipmap/bg_heise" />
+
+
+            <RelativeLayout
+                android:id="@+id/no_chart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/empty"
+                    android:layout_width="71dp"
+                    android:layout_height="69dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/haixiu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/empty"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:text="哎呀都被你看光了"
+                    android:textColor="#bcbcbc"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/chart_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@mipmap/bg_juxing"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@mipmap/xiaofangkuai" />
+
+                        <TextView
+                            android:id="@+id/tv_fensi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/iv_icon"
+                            android:text="魅力增长"
+                            android:textColor="@color/text_color_archor"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/fensiw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_fensi"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/iv_icon"
+                            android:text="0"
+                            android:textColor="@color/text_color_archor"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/cv_chartView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@mipmap/bg_juxing"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_icon2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@mipmap/xiaofangkuai" />
+
+                        <TextView
+                            android:id="@+id/tv_fensi2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/iv_icon2"
+                            android:text="魅力增长"
+                            android:textColor="@color/text_color_archor"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/fensiw2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_fensi2"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/iv_icon2"
+                            android:text="0"
+                            android:textColor="@color/text_color_archor"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/cv_chartView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@mipmap/bg_juxing"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_icon3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@mipmap/xiaofangkuai" />
+
+                        <TextView
+                            android:id="@+id/tv_fensi3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/iv_icon3"
+                            android:text="魅力增长"
+                            android:textColor="@color/text_color_archor"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/fensiw3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_fensi3"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/iv_icon3"
+                            android:text="0"
+                            android:textColor="@color/text_color_archor"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/cv_chartView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/ll_chatview_style">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_icon4"
+                            style="@style/iv_chatview_style"
+                            android:src="@mipmap/xiaofangkuai" />
+
+                        <TextView
+                            android:id="@+id/tv_fensi4"
+                            style="@style/tv_chatview_income_name"
+                            android:text="魅力增长" />
+
+                        <TextView
+                            android:id="@+id/fensiw4"
+                            style="@style/tv_chatview_income_count"
+                            android:text="0" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/cv_chartView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <shangri.example.com.shangri.ui.view.SpringView
+        android:id="@+id/system_springview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/system_irv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </shangri.example.com.shangri.ui.view.SpringView>
+
+    <LinearLayout
+        android:id="@+id/system_no_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="194dp"
+            android:layout_height="136dp"
+            android:src="@mipmap/ic_zxxx_no" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="@string/msg_not_found"
+            android:textColor="@color/text_color_little_black"
+            android:textSize="@dimen/text_size_32" />
+    </LinearLayout>
+</FrameLayout>

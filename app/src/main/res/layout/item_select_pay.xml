@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_jianbian"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/color_white_13"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="选择支付方式" />
+
+    <RelativeLayout
+        android:id="@+id/rl_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#04ffffff"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp">
+
+        <ImageView
+            android:id="@+id/im_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/weixin_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/im_1"
+            android:gravity="center_vertical"
+            android:text="微信支付"
+            android:textColor="#fefefe"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/weixin_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/xuanzhong_3" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#04ffffff"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp">
+
+        <ImageView
+            android:id="@+id/im_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/zhifubao_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/im_2"
+            android:gravity="center_vertical"
+            android:text="支付宝支付"
+            android:textColor="#fefefe"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/alipay_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/wei_xuanzhong" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/go_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bottom_select"
+        android:gravity="center"
+        android:text="立即支付"
+        android:textColor="@color/text_color_light_yellow"
+        android:textSize="18dp" />
+</LinearLayout>

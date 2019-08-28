@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/cl_information"
+android:layout_width="67dp"
+android:layout_height="wrap_content"
+android:layout_marginBottom="19dp">
+
+
+<ImageView
+    android:id="@+id/im_image"
+    android:layout_width="67dp"
+    android:layout_height="50dp"
+    android:scaleType="centerCrop"
+    android:src="@mipmap/kk_pxzwt" />
+
+<TextView
+    android:id="@+id/tv_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/im_image"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="10dp"
+    android:text="主播培训"
+    android:textColor="#ffffff"
+    android:textSize="11sp" />
+
+</RelativeLayout>

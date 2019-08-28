@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <shangri.example.com.shangri.NewCalndarSelect.CalendarPickerView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#262627"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scrollbarStyle="outsideOverlay"
+        app:dayBackground="@drawable/custom_calendar_bg_selector"
+        app:dayTextColor="#ffffffff"
+        app:dividerColor="@color/transparent"
+        app:headerTextColor="#fefefe"
+        app:titleTextColor="#999999" />
+
+</android.support.constraint.ConstraintLayout>

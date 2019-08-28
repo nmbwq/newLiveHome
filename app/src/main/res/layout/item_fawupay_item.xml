@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@mipmap/xuanze_zhixingren"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="14dp">
+
+
+        <ImageView
+            android:id="@+id/im_finish"
+            android:layout_width="51dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/yongwan" />
+
+
+        <ImageView
+            android:id="@+id/im_type"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:src="@mipmap/biaozun_taocan2" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/color_white_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_type"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:text="标准套餐" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_type"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                style="@style/color_white_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="剩余签章次数" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="2018-05-31"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_time"
+            android:layout_marginTop="15dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/news_entertain_irv_zhubo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_canuse_number"
+                    style="@style/color_white_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7次" />
+
+                <TextView
+                    android:id="@+id/tv_sum_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="7dp"
+                    android:gravity="center_horizontal"
+                    android:text="(共10次)"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

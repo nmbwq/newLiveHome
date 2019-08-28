@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise"
+    tools:context=".ui.activity.UserBenefitsActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_appbar_layout_black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+
+            <ImageView
+                android:id="@+id/iv_go_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="32dp"
+                android:paddingRight="@dimen/dp_15"
+                android:src="@mipmap/ic_land_back" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:gravity="center_vertical"
+                android:text="收益"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_34" />
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="20dp"
+                android:text="明细"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="19dp"
+            android:background="@mipmap/sy_bg">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:text="波币余额"
+                android:textColor="#f7c4c4"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_bbrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:paddingRight="19dp"
+                android:text="波币余额"
+                android:textColor="#fda3a3"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_bb_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="540"
+                android:textColor="#ebebeb"
+                android:textSize="46sp" />
+
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_bb_number"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/sy_ktx"
+                android:gravity="center_horizontal"
+                android:paddingTop="6dp"
+                android:text="可提现54元"
+                android:textColor="#fffefe"
+                android:textSize="10sp" />
+
+
+            <TextView
+                android:id="@+id/tv_withdraw"
+                style="@style/color_white_14"
+                android:layout_width="127dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_money"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/color_dialog_commit_shape29"
+                android:gravity="center"
+                android:text="立即提现" />
+
+            <TextView
+                android:id="@+id/tv_makemoney"
+                android:layout_width="127dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_money"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/color_dialog_commit_shape30"
+                android:gravity="center"
+                android:text="马上赚钱"
+                android:textColor="#ee3349"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@+id/rl_info"
+            android:layout_marginTop="7dp">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_shoyi"
+                        style="@style/color_999999_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableLeft="@mipmap/shouysy"
+                        android:drawablePadding="10dp"
+                        android:text="累计收益:5050波币" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_tixian"
+                        style="@style/color_999999_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableLeft="@mipmap/tixiansy"
+                        android:drawablePadding="10dp"
+                        android:text="累计提现：770元" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_tixian_rules"
+            style="@style/color_999999_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:padding="10dp"
+            android:text="查看提现规则"
+            android:visibility="gone"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

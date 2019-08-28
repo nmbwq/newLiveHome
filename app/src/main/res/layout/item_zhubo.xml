@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_news_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:layout_margin="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+       <RelativeLayout
+           android:id="@+id/rl_back"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:padding="1dp"
+           >
+
+        <shangri.example.com.shangri.ui.view.RoundImageView
+            android:id="@+id/im_image"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            />
+
+
+           <RelativeLayout
+               android:id="@+id/ll_three"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="1dp"
+               android:background="@mipmap/tuoyuan"
+               android:layout_marginTop="11dp"
+               >
+           <shangri.example.com.shangri.ui.view.RoundImageView
+               android:id="@+id/im_image1"
+               android:layout_width="66dp"
+               android:layout_height="66dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_centerInParent="true"
+
+               />
+           </RelativeLayout>
+
+       </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="花椒直播"
+            style="@style/color_white_12"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_fans_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="粉丝量：5120W"
+            style="@style/color_999999_11"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

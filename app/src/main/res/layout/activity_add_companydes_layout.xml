@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_appbar_layout_black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+
+            <ImageView
+                android:id="@+id/setting_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_marginTop="32dp"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="@dimen/dp_15"
+                android:src="@mipmap/ic_land_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_marginTop="32dp"
+                android:gravity="center_vertical"
+                android:text="职位描述"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_34" />
+
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#04ffffff"
+            android:orientation="vertical"
+            android:paddingBottom="18dp"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp"
+            android:paddingTop="18dp"
+            android:visibility="gone"
+            >
+
+
+            <TextView
+                style="@style/color_white_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="职位亮点" />
+
+            <EditText
+                android:id="@+id/et_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:hint="用一句话来描述，更能快速吸引主播，不超过14个字"
+                android:maxLength="14"
+                android:textColor="#ffffff"
+                android:textColorHint="#999999"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#04ffffff"
+            android:orientation="vertical"
+            android:paddingBottom="18dp"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp"
+            android:paddingTop="18dp">
+
+            <TextView
+                style="@style/color_white_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详细描述" />
+
+
+            <EditText
+                android:id="@+id/et_des"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="填写详细清晰的职位描述，有助于您更准确的展示招聘需求,
+不超过255个字"
+                android:maxLength="251"
+                android:textColor="#ffffff"
+                android:textColorHint="#999999"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp">
+
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/zhuyi_1"
+
+                />
+
+            <TextView
+                style="@style/color_999999_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="不能填写QQ、微信、电话等联系方式以及特殊符号" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="300dp"
+            android:layout_height="41dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/color_dialog_commit_shape12"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#d0a76c"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

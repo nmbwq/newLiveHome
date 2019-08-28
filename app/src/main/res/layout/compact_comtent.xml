@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mengban_1"
+    android:paddingLeft="55dp"
+    android:paddingRight="55dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/im_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@mipmap/guandiao"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_delete"
+            android:background="@drawable/color_dialog_cancle_shape1"
+            android:orientation="vertical"
+            android:paddingBottom="28dp"
+            android:paddingLeft="34dp"
+            android:paddingRight="33dp"
+            android:paddingTop="51dp">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="您还没有进行主播认证，签署合同需要进行主播认证呢"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_next"
+                style="@style/color_white_14"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/color_dialog_commit_shape1"
+                android:gravity="center"
+                android:text="去认证" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

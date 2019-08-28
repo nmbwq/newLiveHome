@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:background="#04ffffff"
+        android:paddingTop="19dp"
+        android:paddingBottom="24dp"
+        android:layout_marginTop="5dp"
+        >
+
+
+
+         <ImageView
+             android:id="@+id/im_image"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@mipmap/xieyi"
+             />
+
+
+          <TextView
+              android:id="@+id/tv1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="艺人网络演出合作协议"
+              style="@style/color_white_13"
+              android:layout_toRightOf="@+id/im_image"
+              android:layout_marginLeft="10dp"
+              />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_below="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5项必填"
+            style="@style/color_999999_12"
+            android:layout_toRightOf="@+id/im_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

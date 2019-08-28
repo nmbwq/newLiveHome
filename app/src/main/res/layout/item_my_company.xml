@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@mipmap/bg_heise"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="9dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="9dp">
+
+
+            <shangri.example.com.shangri.ui.view.RoundImageView
+                android:id="@+id/im_image"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bg_touxiang" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/color_white_15"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="虎牙（梦露）" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_renzhegn"
+            style="@style/color_white_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/color_dialog_commit_shape11"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="申请为管理员" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#201b1b1b" />
+</LinearLayout>

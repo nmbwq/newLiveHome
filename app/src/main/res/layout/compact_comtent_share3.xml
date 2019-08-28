@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mengban_1"
+    android:paddingLeft="37dp"
+    android:paddingRight="37dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_delete"
+            android:background="@drawable/color_dialog_cancle_shape16"
+            android:orientation="vertical"
+            android:paddingBottom="28dp"
+            android:paddingLeft="34dp"
+            android:paddingRight="33dp"
+            android:paddingTop="28dp">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="已成功复制邮箱号码"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp">
+
+
+                    <ImageView
+                        android:id="@+id/image_type"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/weixin" />
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="zhibozhijia888"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_next"
+                style="@style/color_d0a76c_13"
+                android:layout_width="97dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/color_dialog_commit_shape12"
+                android:gravity="center"
+                android:text="我知道了" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

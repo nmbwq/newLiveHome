@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mengban_1"
+    android:paddingLeft="55dp"
+    android:paddingRight="55dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_delete"
+            android:background="@drawable/color_dialog_cancle_shape1"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="35dp">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="恭喜主上，您已成功绑定公会。升级公会，无需添加更多主播，即可直接查看公会所有主播数据。"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cancle"
+                    style="@style/color_white_14"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/bg_kuang1"
+                    android:gravity="center"
+                    android:text="不,体验报表"
+                    android:layout_marginRight="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_next"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/bg_kuang2"
+                    android:gravity="center"
+                    android:textColor="#cf9a57"
+                    android:textSize="14sp"
+                    android:text="好,绑定公会"
+                    android:layout_marginLeft="8dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

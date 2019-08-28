@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:drawableLeft="@mipmap/gsjs_dian"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="公司介绍"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alpha_05_white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_20">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/color_dialog_commit_shape3"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_5"
+                android:text="规模"
+                android:textColor="@color/text_color_light_yellow"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:background="@drawable/color_dialog_commit_shape3"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_5"
+                android:text="旗下主播"
+                android:textColor="@color/text_color_light_yellow"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/company_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_10"
+            android:drawableLeft="@mipmap/gsjs_dzh"
+            android:drawablePadding="@dimen/dp_4"
+            android:text="杭州市-江干区"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/company_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_20"
+            android:text="safsfajafilfaafgfg"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+</LinearLayout>

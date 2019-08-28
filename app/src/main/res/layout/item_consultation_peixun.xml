@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#04ffffff"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_cultivate_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#201b1b1b" />
+
+        <TextView
+            android:id="@+id/tv_description_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@mipmap/biaoti_juzing"
+            android:drawablePadding="10dp"
+            android:text="主播化妆技巧系列"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_more_makeup_skills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:drawableRight="@mipmap/gengduo_4"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="更多"
+            android:textColor="@color/color_999999"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/rv_train_item"
+        android:nestedScrollingEnabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        />
+</LinearLayout>

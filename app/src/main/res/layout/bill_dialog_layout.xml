@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+    
+     <ImageView
+         android:id="@+id/im_dismiss"
+         android:layout_width="22dp"
+         android:layout_height="22dp"
+         android:src="@mipmap/wrong"
+         android:layout_marginTop="150dp"
+         android:layout_marginRight="30dp"
+         android:layout_alignParentRight="true"
+         />
+    
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/tanchuang"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="52dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#563509"
+            android:textSize="18sp"
+            android:text="提交成功！"
+            />
+
+        <TextView
+            android:id="@+id/tv_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="52dp"
+            android:layout_marginTop="70dp"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:text="稍后会有我们的工作
+人员联系您呢！"
+            android:gravity="center"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

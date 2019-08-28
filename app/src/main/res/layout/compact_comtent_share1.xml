@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mengban_1"
+   >
+
+
+    <RelativeLayout
+        android:id="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="130dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/ll_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="71dp"
+                    android:layout_height="71dp"
+                    android:src="@mipmap/yhfl_ljfx" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="图片分享"
+                    android:textColor="#fefdfd"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="60dp"
+                >
+
+                <ImageView
+                    android:layout_width="71dp"
+                    android:layout_height="71dp"
+                    android:src="@mipmap/yhfl_tpfx" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="链接分享"
+                    android:textColor="#fefdfd"
+                    android:textSize="15sp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

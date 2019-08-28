@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise">
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="平台认证公会"
+            android:textColor="@color/white"
+            android:padding="@dimen/dp_15"
+            android:textSize="@dimen/sp_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+    <include
+        android:id="@+id/activity_empty_linshi"
+        layout="@layout/activity_empty_linshi1"
+        android:visibility="gone" />
+
+</RelativeLayout>

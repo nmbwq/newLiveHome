@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_wd_prompt"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="126dp"
+        android:text="@string/set_pwd_ok"
+        android:textColor="@color/text_color_middle_black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="@string/account_bind_phone"
+        android:lineSpacingExtra="@dimen/px_19"
+        android:textColor="@color/text_color_little_black" />
+
+    <Button
+        android:id="@+id/set_pwd_ok"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:background="@drawable/border_yellow"
+        android:textColor="@color/text_color_light_yellow"
+        android:layout_width="151dp"
+        android:layout_height="32dp"
+        android:text="@string/ok"/>
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#212121"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    >
+
+
+                    <LinearLayout
+                        android:id="@+id/rl_select_zhouqi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#212121"
+                        android:orientation="vertical"
+                        android:paddingLeft="19dp"
+                        android:paddingRight="19dp"
+                        android:paddingBottom="20dp"
+                        >
+
+                        <TextView
+                            style="@style/color_white_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="结算周期" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/re_cycle_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        style="@style/color_white_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="期望底薪（单选）"
+                        android:paddingLeft="19dp"
+                        android:paddingRight="19dp"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/re_money1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="19dp"
+                        android:paddingRight="19dp"
+                        />
+
+
+                    <TextView
+                        style="@style/color_white_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="期望薪资（单选）"
+                        android:paddingLeft="19dp"
+                        android:paddingRight="19dp"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/re_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="19dp"
+                        android:paddingRight="19dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="19dp"
+                        android:paddingRight="19dp"
+                        android:visibility="gone"
+                        >
+
+
+                        <EditText
+                            android:id="@+id/et1"
+                            android:layout_width="80dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/color_dialog_commit_shape16"
+                            android:gravity="center"
+                            android:hint="最低"
+                            android:inputType="number"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#666666"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            style="@style/color_999999_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="———" />
+
+                        <EditText
+                            android:id="@+id/et2"
+                            android:layout_width="80dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/color_dialog_commit_shape16"
+                            android:gravity="center"
+                            android:hint="最高"
+                            android:inputType="number"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#666666"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/ll_info"
+                        android:background="#1b1b1b"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_money_cncle"
+                            style="@style/color_d0a76c_15"
+                            android:layout_width="110dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="50dp"
+                            android:background="@drawable/color_dialog_cancle_shape12"
+                            android:gravity="center"
+                            android:text="重置" />
+
+                        <TextView
+                            android:id="@+id/tv_money_commit"
+                            style="@style/color_white_15"
+                            android:layout_width="110dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="40dp"
+                            android:background="@drawable/color_dialog_commit_shape1"
+                            android:gravity="center"
+                            android:text="确定" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

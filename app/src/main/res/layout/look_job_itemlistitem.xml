@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_select"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--根布局文件不能获取控件  实现高度改变  只能在里面在加一个布局 -->
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<ImageView-->
+            <!--android:id="@+id/im_photo1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scaleType="centerCrop" />-->
+
+
+            <shangri.example.com.shangri.ui.view.CansCrollRecycle.RecyclerViewPager
+                android:id="@+id/recy_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/zhubo_mb"
+                android:paddingLeft="19dp"
+                android:paddingBottom="75dp">
+
+                <TextView
+                    android:id="@+id/tv_photo_positon"
+                    style="@style/color_white_13"
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="66dp"
+                    android:background="@drawable/color_dialog_commit_shape22"
+                    android:gravity="center"
+                    android:text="1/3"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_rob_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="66dp"
+                    android:layout_marginRight="19dp"
+                    android:background="@drawable/color_dialog_commit_shape38"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="7dp"
+                    android:paddingBottom="2dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/zbzp_huo" />
+
+                    <TextView
+                        android:id="@+id/tv_rob_num"
+                        style="@style/color_white_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:text="8人正在抢ta" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_refush"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="38dp"
+                            android:layout_height="32dp"
+                            android:src="@mipmap/zuixin" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="刷新"
+                            android:textColor="#ffffff"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/rl_click_collect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_collect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/d11" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="4dp"
+                            android:text="收藏"
+                            android:textColor="#ffffff"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_click_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+
+                        <ImageView
+                            android:id="@+id/tv_liu_image"
+                            android:layout_width="33dp"
+                            android:layout_height="33dp"
+                            android:src="@mipmap/bodianhua" />
+
+                        <TextView
+                            android:id="@+id/tv_is_liu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="留电话"
+                            android:textColor="#ffffff"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_click_yuliao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/im_qiangta"
+                            android:layout_width="33dp"
+                            android:layout_height="33dp"
+                            android:src="@mipmap/zbzp_qta" />
+
+                        <TextView
+                            android:id="@+id/tv_qiangta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="抢ta"
+                            android:textColor="#ffffff"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/color_dialog_commit_shape33"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:text="无敌小豆也"
+                        android:textColor="#40000000"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="无敌小豆也"
+                            android:textColor="#ffffff"
+                            android:textSize="21dp" />
+
+                        <TextView
+                            android:id="@+id/tv_active_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/color_dialog_commit_shape36"
+                            android:padding="4dp"
+                            android:layout_marginTop="1dp"
+                            android:text="2日内活跃"
+                            android:textColor="#ffffff"
+                            android:textSize="8sp" />
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="27岁"
+                            android:textColor="#ffffff"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:id="@+id/im_sex"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/tv_age" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_jingyan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="一年直播经验"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="期望底薪: 3K-6K"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_type"
+                            style="@style/color_white_12"
+                            android:layout_width="60dp"
+                            android:layout_height="22dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="11dp"
+                            android:background="@drawable/color_dialog_commit_shape23"
+                            android:gravity="center"
+                            android:text="美妆主播" />
+
+                        <TextView
+                            android:id="@+id/tv_type1"
+                            style="@style/color_white_12"
+                            android:layout_width="60dp"
+                            android:layout_height="22dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="11dp"
+                            android:background="@drawable/color_dialog_commit_shape23"
+                            android:gravity="center"
+                            android:text="美妆主播" />
+
+                        <TextView
+                            android:id="@+id/tv_type2"
+                            style="@style/color_white_12"
+                            android:layout_width="60dp"
+                            android:layout_height="22dp"
+                            android:layout_marginBottom="11dp"
+                            android:background="@drawable/color_dialog_commit_shape23"
+                            android:gravity="center"
+                            android:text="美妆主播" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            style="@style/color_white_13"
+                            android:layout_width="63dp"
+                            android:layout_height="24dp"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/color_dialog_commit_shape2"
+                            android:gravity="center"
+                            android:text="# 已签约" />
+
+                        <TextView
+                            android:id="@+id/tv2"
+                            style="@style/color_white_13"
+                            android:layout_width="63dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/color_dialog_commit_shape2"
+                            android:gravity="center"
+                            android:text="# 已沟通" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

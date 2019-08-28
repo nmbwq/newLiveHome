@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shangri.example.com.shangri.NewCalndarSelect.CalendarRowView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+  <shangri.example.com.shangri.NewCalndarSelect.CalendarCellView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/CalendarCell.CalendarDate"
+      />
+  <shangri.example.com.shangri.NewCalndarSelect.CalendarCellView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/CalendarCell.CalendarDate"
+      />
+  <shangri.example.com.shangri.NewCalndarSelect.CalendarCellView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/CalendarCell.CalendarDate"
+      />
+  <shangri.example.com.shangri.NewCalndarSelect.CalendarCellView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/CalendarCell.CalendarDate"
+      />
+  <shangri.example.com.shangri.NewCalndarSelect.CalendarCellView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/CalendarCell.CalendarDate"
+      />
+  <shangri.example.com.shangri.NewCalndarSelect.CalendarCellView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/CalendarCell.CalendarDate"
+      />
+  <shangri.example.com.shangri.NewCalndarSelect.CalendarCellView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/CalendarCell.CalendarDate"
+      />
+</shangri.example.com.shangri.NewCalndarSelect.CalendarRowView>

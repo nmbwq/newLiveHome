@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/convenientBanner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:canLoop="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:visibility="invisible"
+        android:background="@color/bg_color_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/iv1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_color_little_orange"
+            android:text="找平台"
+            android:textSize="11sp"
+            android:drawableTop="@mipmap/icon_xinshou" />
+        <TextView
+            android:id="@+id/iv2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:text="找公会"
+            android:drawableTop="@mipmap/icon_fensi" />
+        <TextView
+            android:id="@+id/iv3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="找主播"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:drawablePadding="10dp"
+            android:textSize="11sp"
+            android:drawableTop="@mipmap/icon_zhibo" />
+        <TextView
+            android:id="@+id/iv4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="我要入驻"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/icon_wenti" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

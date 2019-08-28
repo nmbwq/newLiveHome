@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#04ffffff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/activity_empty_linshi"
+            layout="@layout/activity_empty_linshi"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@mipmap/bg_heise"
+                android:gravity="center"
+                android:text="（2017.12.01-2017.12.30）"
+                android:textColor="@color/color_999999"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_data"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="排名"
+                    android:textColor="@color/text_color_little_orange"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_charm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text="昵称"
+                    android:textColor="@color/text_color_little_orange"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_Fans"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/text_color_little_orange"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+
+            <!--<ScrollView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/news_entertain_irv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:id="@+id/ll_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/news_entertain_irv"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/tv_more"
+                            style="@style/color_d0a76c_13"
+                            android:layout_width="106dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/color_dialog_commit_shape3"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="查看更多+"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+                <!--</RelativeLayout>-->
+            <!--</ScrollView>-->
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layout_network_break"
+            layout="@layout/layout_network_break"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

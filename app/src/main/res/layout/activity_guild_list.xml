@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/bg_heise"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:paddingTop="15dp"
+        android:background="@color/bg_color_appbar_layout_black"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/setting_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/ic_land_back" />
+            <TextView
+                android:id="@+id/tv_guild_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绑定公会"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_34"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/iv_add_guild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:text="取消"
+                />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="@null" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dip"
+                android:paddingLeft="10dip"
+                android:paddingTop="3dip"
+                android:visibility="gone"
+                android:text="A"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <shangri.example.com.shangri.ui.view.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="25dip"
+            android:layout_height="450dp"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="10dp" />
+    </FrameLayout>
+
+</LinearLayout>

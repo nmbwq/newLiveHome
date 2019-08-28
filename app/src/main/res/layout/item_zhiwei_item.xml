@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_news_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="#04ffffff">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="19dp"
+        android:paddingTop="17dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="13dp">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/im_hot"
+                android:layout_width="13dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/remen_xin" />
+
+
+            <TextView
+                android:id="@+id/tv_anchor_name"
+                style="@style/color_white_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/im_hot"
+                android:text="知名主播" />
+
+            <TextView
+                android:id="@+id/tv_xianxia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_anchor_name"
+                android:background="@drawable/color_dialog_commit_shape12"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:text="dfhsh"
+                android:textColor="#d0a76c"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/tv_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_xianxia"
+                android:background="@drawable/color_dialog_commit_shape12"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:text="sdfsf"
+                android:textColor="#d0a76c"
+                android:textSize="9sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_plat_name"
+                style="@style/color_white_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="花椒直播" />
+
+            <TextView
+                android:id="@+id/tv_welface"
+                style="@style/color_999999_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_plat_name"
+                android:text="五险一金  |  年假" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/im_right"
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_wd_more" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/im_right">
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="审核失败"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/color_white_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="距下架还有" />
+
+
+                <TextView
+                    android:id="@+id/tv_time_hour"
+                    style="@style/color_white_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/color_dialog_commit_shape2"
+                    android:padding="3dp"
+                    android:text="6时" />
+
+                <TextView
+                    android:id="@+id/tv_time_minutes"
+                    style="@style/color_white_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/color_dialog_commit_shape2"
+                    android:padding="3dp"
+                    android:text="1分" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

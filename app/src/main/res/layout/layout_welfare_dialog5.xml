@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_info"
+        android:layout_width="wrap_content"
+        android:layout_height="265dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/dlcg_pop">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+40波豆"
+                android:textColor="#d0a76c"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="奖励"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="158dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/color_dialog_commit_shape12"
+            android:gravity="center"
+            android:text="领取"
+            android:textColor="#d0a76c"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:padding="5dp"
+        android:src="@mipmap/sjd_gb" />
+
+
+</RelativeLayout>

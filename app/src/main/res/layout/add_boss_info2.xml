@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mengban_1"
+    android:paddingLeft="37dp"
+    android:paddingRight="37dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_delete"
+            android:background="@drawable/color_dialog_cancle_shape16"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingTop="25dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="25dp">
+
+            <TextView
+                android:id="@+id/tv_content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="添加微信、关注公众号"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:id="@+id/im1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="公众号："
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/im1"
+                    android:text="0571-87081736"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="53dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/color_dialog_cancle_shape12"
+                    android:gravity="center"
+                    android:text="复制"
+                    android:textColor="#d0a76c"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/im2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="微信："
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/im2"
+                    android:text="zhibozhijia888"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_weixin"
+                    android:layout_width="53dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/color_dialog_cancle_shape12"
+                    android:gravity="center"
+                    android:text="复制"
+                    android:textColor="#d0a76c"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="发送添加申请备注格式：昵称+手机号+求职意向,添加微信，关注公众号成功后，即可获得波币"
+                android:textColor="#959595"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

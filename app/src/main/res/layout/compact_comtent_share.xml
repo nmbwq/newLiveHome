@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mengban_1"
+    android:paddingLeft="37dp"
+    android:paddingRight="37dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_delete"
+            android:background="@drawable/color_dialog_cancle_shape16"
+            android:orientation="vertical"
+            android:paddingLeft="34dp"
+            android:paddingTop="51dp"
+            android:paddingRight="33dp"
+            android:paddingBottom="28dp">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="您已举报成功"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_next"
+                style="@style/color_white_14"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/color_dialog_commit_shape1"
+                android:gravity="center"
+                android:text="知道了" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

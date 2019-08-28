@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/bg_color_appbar_layout_black"
+        android:paddingTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/setting_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:padding="10dp"
+                android:src="@mipmap/ic_land_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/guild"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_34" />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appbar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_select"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="#04ffffff">
+
+            <TextView
+                android:id="@+id/setting_pwd"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:layout_toRightOf="@id/iv_pass"
+                android:text="公会名称："
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/et_pingtai"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:layout_toEndOf="@+id/setting_pwd"
+                android:layout_toRightOf="@+id/setting_pwd"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请选择公会名称"
+                android:lines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_color_little_black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:padding="20dp"
+                android:src="@mipmap/ic_wd_more" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_anchor_id"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="1dp"
+            android:background="#04ffffff"
+            android:padding="12.5dp"
+            android:paddingRight="12.5dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/color_white_15"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="主播ID：" />
+
+            <EditText
+                android:id="@+id/et_anchor_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv1"
+                android:background="@null"
+                android:hint="可以添加多个主播ID，请用分号；分开"
+                android:textColor="#ffffff"
+                android:textColorHint="#666666"
+                android:textSize="15sp"
+                android:digits="1234567890;；"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12.5dp"
+            android:text="注：目前支持快速绑定的公会对主播进行添加和移除"
+            android:textColor="#bbbbbb"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_clsan"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="70dp"
+            android:background="@mipmap/btn_c2"
+            android:gravity="center"
+            android:text="提交审核"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+</RelativeLayout>

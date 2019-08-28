@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_heise"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_no_guild"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                android:src="@mipmap/bangding_kong" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="您还没有公会呢，赶紧绑定一个吧！"
+                android:textColor="#c5c5c5"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_bring_guild"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@mipmap/anniu_chuanjian"
+                    android:gravity="center"
+                    android:text="绑定公会"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

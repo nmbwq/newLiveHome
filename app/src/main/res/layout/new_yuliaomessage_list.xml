@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/activity_empty_linshi"
+            layout="@layout/activity_empty_linshi1"
+            android:visibility="gone" />
+
+        <shangri.example.com.shangri.ui.view.SpringView
+            android:id="@+id/sv_partol"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/appbar">
+
+                <shangri.example.com.shangri.swipeMenuListView.SwipeMenuListView
+                    android:id="@+id/rv_manager_partol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+        </shangri.example.com.shangri.ui.view.SpringView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

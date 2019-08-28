@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/zuzhi_xuanzetuanchuang"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/color_white_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="请选择公司规模" />
+
+
+        <shangri.example.com.shangri.ui.view.ListViewForScrollView
+            android:id="@+id/tv_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"></shangri.example.com.shangri.ui.view.ListViewForScrollView>
+
+
+        <TextView
+            android:id="@+id/tv_commit"
+            style="@style/color_white_15"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_below="@+id/tv_listview"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/color_dialog_commit_shape1"
+            android:gravity="center"
+            android:text="确认"
+             />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

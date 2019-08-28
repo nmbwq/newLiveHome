@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_net_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <shangri.example.com.shangri.ui.view.SpringView
+                android:id="@+id/sv_partol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_serch"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <shangri.example.com.shangri.ui.view.VerticalScrollView
+                    android:id="@+id/verticalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <shangri.example.com.shangri.ui.view.ListViewForScrollView
+                            android:id="@+id/rv_partol"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
+                </shangri.example.com.shangri.ui.view.VerticalScrollView>
+
+            </shangri.example.com.shangri.ui.view.SpringView>
+
+            <LinearLayout
+                android:id="@+id/search_not_found"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/sousuo_kong2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="哎呀，你难倒我了，"
+                    android:textColor="#ebebeb"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="换个词搜搜看吧~"
+                    android:textColor="#ebebeb"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/bg_color_appbar_layout_black"
+        android:paddingTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/setting_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:padding="10dp"
+                android:src="@mipmap/ic_land_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/binging_guild"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_34" />
+
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/color_dialog_cancle_shape4">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="28dp"
+                    android:src="@mipmap/ic_jiaobiao1" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="30dp"
+                    android:text="快速绑定公会"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_no_1"
+                    style="@style/color_999999_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv1"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="15dp"
+                    android:text="公会进行快速绑定，可查看该公会在直播平台的主
+播直播综合数据" />
+
+                <TextView
+                    android:id="@+id/tv_no_2"
+                    style="@style/color_666666_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_no_1"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="15dp"
+                    android:text="快速公会可自动爬取公会长所在的直播平台的主播数据
+（每日直播收益，开播时长，粉丝榜单，智能分析粉丝增
+长及所在平台的综合排名分析等等）" />
+
+                <TextView
+                    android:id="@+id/tv_fast_ident"
+                    style="@style/color_white_15"
+                    android:layout_width="160dp"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/tv_no_2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/color_dialog_commit_shape1"
+                    android:gravity="center"
+                    android:text="我要绑定" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/color_dialog_cancle_shape4">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="28dp"
+                    android:src="@mipmap/ic_jiaobiao2" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="30dp"
+                    android:text="平台认证公会"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_no_3"
+                    style="@style/color_999999_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv2"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="15dp"
+                    android:text="公会可绑定/升级认证公会，认证公会爬取的直播
+数据更为精准，但是需要登录公会后台（注平台给
+予公会的结算后台）" />
+
+
+                <TextView
+                    android:id="@+id/tv_no_4"
+                    style="@style/color_666666_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_no_3"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="15dp"
+                    android:text="认证公会有快速公会的所有功能，但是数据更为精准，方便公会直接为主播进行结算。且认证公会能享受更多平台认证权益！" />
+
+
+                <TextView
+                    android:id="@+id/tv_platfrom_ident"
+                    style="@style/color_white_15"
+                    android:layout_width="160dp"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/tv_no_4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/color_dialog_commit_shape1"
+                    android:gravity="center"
+                    android:text="我要认证" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_support_platfrom"
+                style="@style/color_d0a76c_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="查看支持平台" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

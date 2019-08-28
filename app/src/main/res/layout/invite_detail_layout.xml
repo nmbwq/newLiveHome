@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171717">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#02ffffff"
+                android:orientation="vertical"
+                android:paddingLeft="19dp"
+                android:paddingTop="24dp"
+                android:paddingRight="19dp"
+                android:paddingBottom="32dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/im_hot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/remen_xin" />
+
+                    <TextView
+                        android:id="@+id/tv_type_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/im_hot"
+                        android:text="热招淘宝主播"
+                        android:textColor="#ffffff"
+                        android:textSize="23sp" />
+
+                    <TextView
+                        android:id="@+id/tv_low_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/color_dialog_commit_shape42"
+                        android:paddingLeft="6dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="6dp"
+                        android:paddingBottom="4dp"
+                        android:text="底薪：6K"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:text="10K-30K"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_leixing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:drawableLeft="@mipmap/zwxq_lx"
+                    android:drawablePadding="10dp"
+                    android:text="电竞主播"
+                    android:textColor="#a9a9a9"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14sp">
+
+                    <TextView
+                        android:id="@+id/tv_plat_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:text="花椒直播|虎牙直虎牙直播"
+                        android:textColor="#a9a9a9"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:src="@mipmap/zwxq_pt"
+
+                        />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_createtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14sp"
+                    android:drawableLeft="@mipmap/zwxq_sj"
+                    android:drawablePadding="10dp"
+                    android:text="发布时间: 2019.1.5"
+                    android:textColor="#a9a9a9"
+                    android:textSize="12sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14sp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/zwxq_dz"
+                        android:drawablePadding="10dp"
+                        android:text="杭州-江干区    杭州汇都科技有限公司"
+                        android:textColor="#a9a9a9"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/tv_is_guanfang"
+                        android:layout_width="13dp"
+                        android:layout_height="17dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/guanfang_xiao" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:background="#02ffffff"
+                android:orientation="vertical"
+                android:paddingLeft="19dp"
+                android:paddingTop="22dp"
+                android:paddingRight="19dp"
+                android:paddingBottom="25dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="职位描述"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_partol"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginBottom="25dp" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    style="@style/color_999999_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="公司需要培一批网红主播和买家秀模特，有经验主播带上你
+的要求，保底薪资+网红公寓包住" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginBottom="19dp"
+                    android:background="#20000000" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公司信息"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_company_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp">
+
+
+                    <ImageView
+                        android:id="@+id/im_company_photo"
+                        android:layout_width="70dp"
+                        android:layout_height="55dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/zbzp_qylogo" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/im_company_photo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_company_name"
+                            style="@style/color_white_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="15dp"
+                            android:text="杭州才艺网络有限公公司杭州才艺网络有限公司" />
+
+                        <TextView
+                            android:id="@+id/tv_company_number"
+                            style="@style/color_999999_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="100-500人.300位主播" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/wd_jih" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

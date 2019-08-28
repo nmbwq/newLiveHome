@@ -1,0 +1,119 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">直播之家</string>
+    <string name="main_news">看看</string>
+
+    <string name="make_money">赚钱</string>
+
+    <string name="main_my">我的</string>
+
+    <string name="tab_news_hot">培训</string>
+    <string name="tab_news_headlines">头条</string>
+    <string name="tab_news_wenda">问答</string>
+    <string name="camera_permission_required">本功能需要相机权限！</string>
+    <drawable name="clr_normal">#04000000</drawable>
+    <drawable name="clr_pressed">#262627</drawable>
+    //会长
+    <string name="tab_partol">辅导</string>
+
+
+    <drawable name="clr_normal1">#1b1b1b</drawable>
+    <drawable name="clr_pressed1">#d0a76c</drawable>
+
+    //主播
+    <string name="tab_anchor">辅导通知</string>
+    <string name="tab_task">任务</string>
+    //限制输入不能输入中文
+    <string name="refreshing">刷新中...</string>
+    <string name="loading">加载中...</string>
+
+
+    <string name="guild">绑定公会</string>
+    <string name="setting">设置</string>
+    <string name="binging_guild">绑定公会</string>
+    <string name="collect">我的收藏</string>
+
+    <string name="cancel">取消</string>
+    <string name="search">搜索</string>
+    <string name="search_not_found">对不起,这里空空如也呀~</string>
+    <string name="search_not_net">当前网络不可用，请检查网络设置~</string>
+
+    <!--登录模块-->
+    <string name="login">登录</string>
+    <string name="get_code">验证</string>
+    <string name="get_code_text">获取验证码</string>
+    <string name="register_hint">还没有账号？</string>
+    <string name="register">注册</string>
+    <string name="bount_tel">绑定手机号</string>
+    <string name="input_pass">请输入密码</string>
+    <string name="input_pass_2">请再次输入密码</string>
+    <string name="user_login_title">用户登录</string>
+    <string name="forgot_pass_hint">忘记密码?</string>
+    <string name="old_pass">当前密码</string>
+    <string name="new_pass">新密码</string>
+    <string name="renew_pass">确认密码</string>
+
+
+    <string name="setting_pass">设置新密码</string>
+    <string name="setting_video">视频和动图播放</string>
+    <string name="setting_clsan">清除缓存</string>
+    <string name="setting_updata">检查更新</string>
+    <string name="setting_helper">关于我们</string>
+    <string name="setting_wx">公众号二维码</string>
+    <string name="user_feedback">用户反馈</string>
+    <string name="input_feedback_hint">请输入不少于10个字的描述</string>
+    <string name="upload_shot">上传截图</string>
+    <string name="contact_tel">联系方式</string>
+    <string name="contact_tel_hint">QQ/手机号</string>
+    <string name="msg_not_found">暂时没有消息</string>
+    <string name="advice_tip">问题和建议</string>
+    <string name="msg_detail_title">公告</string>
+    <!--微信appid-->
+    <string name="weixinAppid">1</string>
+    <!--微信公众号id-->
+
+    <string name="take_photo">拍照</string>
+    <string name="select_from_album">从手机相册中选择</string>
+    <string name="save_photo">保存图片</string>
+    <string name="clear_cache_confirm">确定清除缓存吗</string>
+    <string name="confrim">确定</string>
+    <string name="submit">提交</string>
+    <string name="takephoto_hint">相机/相册</string>
+    <string name="set_pwd_ok">密码设置成功</string>
+    <string name="account_bind_phone">您的账号已绑定为手机号\n可用使用账号登陆哦!</string>
+    <string name="ok">知道了</string>
+    <string name="weixin_follow">公众号二维码</string>
+    <string name="about_us">关于我们</string>
+    <string name="audio_title">听音频 听资讯</string>
+    <string name="load_data_failed">数据加载失败</string>
+    <string name="try_later">网络或数据延迟 请稍后再试</string>
+    <string name="is_wifi_limited">仅wifi</string>
+    <string name="wifi_hint">您已选择仅在wifi下播放</string>
+
+    <!--我的公会-->
+    <string name="register_other_login">其他登录方式</string>
+    <string name="title_get_code">获取验证码</string>
+    <string name="reget_code">重新获取</string>
+    <string name="input_pwd">输入密码</string>
+
+    <string name="times1">拨电话“剩余(次)”</string>
+    <string name="times2">留电话“剩余(次)”</string>
+    <string name="times3">“拨电话”次数</string>
+    <string name="times4">“留电话”次数</string>
+    <string name="times5">主播求职，可主动给主播拨打电话的次数</string>
+    <string name="times6">主播求职，可给主播预留电话的次数</string>
+    <string name="times7">购买“拨电话”次数</string>
+    <string name="times8">给主播“拨电话”</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- 日历用到的typeface -->
+
+
+    <string name="day_name_format">EEE</string>
+    <string name="invalid_date">Date must be between %1$s and %2$s.</string>
+    <string name="month_name_format">MMMM yyyy</string>
+    <!--改变editext的hint字体大小-->
+    <!--改变editext的hint字体大小-->
+    <string name="edittext_hint1"></string>
+
+</resources>

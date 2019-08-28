@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shangri.example.com.shangri.ui.view.CustomJCVideoPlayerStandard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news_detail_video"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_white" />
+<!--<fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news_detail_video"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_white" />-->
+

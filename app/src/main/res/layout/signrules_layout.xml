@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/bg_color_appbar_layout_black"
+        android:paddingTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/setting_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:padding="10dp"
+                android:src="@mipmap/ic_land_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="签到规则"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_34" />
+
+            <TextView
+                android:id="@+id/iv_add_guild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/color_999999_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.每天完成一次签到可获得波币奖励；" />
+
+            <TextView
+                style="@style/color_999999_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2.连续签到在3天、5天、7天、可获得奖励加成；"
+
+                />
+
+            <TextView
+                style="@style/color_999999_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3.连续签到中断，将从第一天重新开始；"
+
+                />
+
+            <TextView
+                style="@style/color_999999_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4.奖励计算周期为7天；"
+
+                />
+
+            <TextView
+                style="@style/color_999999_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="5.连续签到奖励如下；"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginRight="24dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="第一天"
+                    android:textColor="#999999"
+                    android:textSize="8sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/im_sign_1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/rwzx_bb" />
+
+                    <TextView
+                        android:id="@+id/tv_sign_line1"
+                        android:layout_width="24dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#787878" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_sign_number1"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="+10"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="第二天"
+                    android:textColor="#999999"
+                    android:textSize="8sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/im_sign_2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/rwzx_bb" />
+
+                    <TextView
+                        android:id="@+id/tv_sign_line2"
+                        android:layout_width="23dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#787878" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_sign_number2"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="+10"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="奖励"
+                    android:textColor="#999999"
+                    android:textSize="8sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/im_sign_3"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/rwzx_jl" />
+
+                    <TextView
+                        android:id="@+id/tv_sign_line3"
+                        android:layout_width="23dp"
+
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#787878" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_sign_number3"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="+10"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="第四天"
+                    android:textColor="#999999"
+                    android:textSize="8sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/im_sign_4"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/rwzx_bb" />
+
+                    <TextView
+                        android:id="@+id/tv_sign_line4"
+                        android:layout_width="23dp"
+
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#787878" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_sign_number4"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="+10"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="奖励"
+                    android:textColor="#999999"
+                    android:textSize="8sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/im_sign_5"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/rwzx_jl" />
+
+                    <TextView
+                        android:id="@+id/tv_sign_line5"
+                        android:layout_width="23dp"
+
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#787878" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_sign_number5"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="+10"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="第六天"
+                    android:textColor="#999999"
+                    android:textSize="8sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/im_sign_6"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/rwzx_bb" />
+
+                    <TextView
+                        android:id="@+id/tv_sign_line6"
+                        android:layout_width="23dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#787878" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_sign_number6"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="+10"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="奖励"
+                    android:textColor="#999999"
+                    android:textSize="8sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/im_sign_7"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/rwzx_jl" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_sign_number7"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="+10"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

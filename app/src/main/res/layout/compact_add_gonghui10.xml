@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mengban_1"
+    android:paddingLeft="37dp"
+    android:paddingRight="37dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:id="@+id/ll_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_delete"
+            android:background="@drawable/color_dialog_cancle_shape16"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="24dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="留电话"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:text="发布职位赠送福利"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="84dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="23dp"
+                android:background="@mipmap/bg_kuang2"
+                android:gravity="center"
+                android:text="关闭"
+                android:textColor="#cf9a57"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

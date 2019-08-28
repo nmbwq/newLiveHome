@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/layout_network_break"
+            layout="@layout/layout_network_break"
+            android:visibility="invisible" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_net_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <shangri.example.com.shangri.ui.view.SpringView
+                    android:id="@+id/sv_partol"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rl_serch"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_partol"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                </shangri.example.com.shangri.ui.view.SpringView>
+
+                <include
+                    android:id="@+id/activity_empty_linshi"
+                    layout="@layout/activity_empty_linshi1"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

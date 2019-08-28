@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1b1b1b">
+
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_info"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/hongbaoclose" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="19dp"
+        android:paddingTop="35dp"
+        android:paddingRight="19dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无敌小豆也"
+            android:textColor="#ffffff"
+            android:textSize="19dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_type"
+                style="@style/color_white_12"
+                android:layout_width="60dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="11dp"
+                android:background="@drawable/color_dialog_commit_shape23"
+                android:gravity="center"
+                android:text="美妆主播" />
+
+            <TextView
+                android:id="@+id/tv_type1"
+                style="@style/color_white_12"
+                android:layout_width="60dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="11dp"
+                android:background="@drawable/color_dialog_commit_shape23"
+                android:gravity="center"
+                android:text="美妆主播" />
+
+            <TextView
+                android:id="@+id/tv_type2"
+                style="@style/color_white_12"
+                android:layout_width="60dp"
+                android:layout_height="22dp"
+                android:layout_marginBottom="11dp"
+                android:background="@drawable/color_dialog_commit_shape23"
+                android:gravity="center"
+                android:text="美妆主播" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_consume_bb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="0"
+                android:textColor="#e3be84"
+                android:textSize="34sp" />
+
+
+            <ImageView
+                android:id="@+id/im_is_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_consume_bb"
+                android:src="@mipmap/zbzp_hdj" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="22dp"
+                android:layout_toRightOf="@+id/tv_consume_bb"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="波豆"
+                    android:textColor="#e3be84"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/is_activity_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text=" (活动期间：享受活动价5次/天)"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="抢ta可直接获取ta的联系方式，并将通过App和短信送达候选人"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bottom_select"
+            android:gravity="center"
+            android:text="立即抢ta"
+            android:textColor="#d0a76c"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

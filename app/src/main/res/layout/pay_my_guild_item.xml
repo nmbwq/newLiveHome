@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_onclik"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:background="#04ffffff"
+        android:orientation="horizontal">
+
+        <shangri.example.com.shangri.ui.view.RoundImageView
+            android:id="@+id/im_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_huizhang2" />
+        <TextView
+            android:id="@+id/tv_titel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/im_icon"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="猫咪-菠萝街" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

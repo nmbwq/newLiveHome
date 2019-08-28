@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_margin="@dimen/dp_20"
+    android:layout_height="wrap_content">
+
+    <shangri.example.com.shangri.ui.view.RoundImageView
+        android:id="@+id/icon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/xzpt_logo" />
+
+    <CheckBox
+        android:id="@+id/is_check"
+        android:padding="@dimen/dp_5"
+        android:layout_width="24dp"
+        android:button="@null"
+
+        android:checked="false"
+        android:background="@drawable/select_is_check"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+    <!--android:button="@null"-->
+    <!--android:background="@mipmap/gsjswei"-->
+    <!--android:src="@mipmap/gsjsyi"-->
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_below="@+id/icon"
+        android:id="@+id/title"
+        android:textSize="@dimen/sp_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="斗鱼tv" />
+
+</RelativeLayout>

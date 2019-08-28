@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!--android:background="@drawable/corner_radius_5"-->
+    <ImageView
+        android:id="@+id/progress_loading"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="@dimen/dp_23"
+        android:src="@drawable/anim_list_progress" />
+
+    <TextView
+        android:id="@+id/progress_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_21"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="加载中"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size_32"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_type_empty"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/fudao_kong" />
+
+            <TextView
+                android:id="@+id/tv_text1_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="没有一条辅导内容"
+                android:textColor="#ebebeb"
+                android:textSize="15sp" />
+
+            <TextView
+
+                android:id="@+id/tv_text2_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="这里只是一个空白页呀~"
+                android:textColor="#ebebeb"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

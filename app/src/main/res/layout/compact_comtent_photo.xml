@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mengban_1"
+    android:paddingLeft="55dp"
+    android:paddingRight="55dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/tanchuang1">
+
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="知道了"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            style="@style/color_white_15"
+            android:background="@drawable/color_dialog_commit_shape1"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

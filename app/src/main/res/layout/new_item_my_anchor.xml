@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ll_my_zhubo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="9dp">
+
+            <ImageView
+                android:id="@+id/im_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/my_sanjiao_xiangyou" />
+
+            <TextView
+                android:id="@+id/tv_gonghui_name"
+                style="@style/color_white_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22dp"
+                android:layout_marginStart="22dp"
+                android:layout_toEndOf="@+id/im_up"
+                android:layout_toRightOf="@+id/im_up"
+                android:text="虎牙直播（coco）" />
+
+            <TextView
+                android:id="@+id/tv_gonghui_number"
+                style="@style/color_999999_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="2人" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#401b1b1b" />
+
+
+        <shangri.example.com.shangri.ui.view.ListViewForScrollView
+            android:id="@+id/rv_partol"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="其他主播"
+                style="@style/color_999999_14"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#401b1b1b" />
+
+            <shangri.example.com.shangri.swipeMenuListView.SwipeMenuListView
+                android:id="@+id/rv_other_partol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_yin"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/setting_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:padding="20dp"
+        android:src="@mipmap/icon_shouqi" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="15dp"
+            android:text="如何提升提直播间的人气"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/myView"
+            android:layout_width="263dp"
+            android:layout_height="263dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+        <ImageView
+            android:id="@+id/iv_audio"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitCenter" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myView"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="00:55"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <SeekBar
+                    android:id="@+id/audio_seekbar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:maxHeight="3dp"
+                    android:minHeight="3dp"
+                    android:progressBackgroundTint="#eaeaea"
+                    android:progressDrawable="@drawable/seekbar_audio"
+                    android:thumb="@mipmap/icon_huadong2"
+                    android:thumbOffset="0dip" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="00:55"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_start"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_zanting" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_to_html"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:scaleType="centerCrop"
+            android:padding="6dp"
+            android:src="@mipmap/icon_wengao"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:text="文章详情"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:padding="6dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/iv_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+
+
+            android:scaleType="centerCrop"
+            android:src="@mipmap/yinpin_shoucang1" />
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:text="收藏"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_dian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="40dp"
+            android:padding="6dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_good3" />
+
+        <TextView
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_dian"
+            android:text="点赞"
+            android:textColor="@color/white" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

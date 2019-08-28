@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TitleBar">
+        <attr name="titleBarTitle" format="string"/>
+        <attr name="titleBarLeftImage" format="reference"/>
+        <attr name="titleBarRightImage" format="reference"/>
+        <attr name="titleBarBackground" format="reference|color"/>
+    </declare-styleable>
+
+
+
+
+    <declare-styleable name="stl_SmartTabLayout">
+        <attr name="stl_indicatorAlwaysInCenter" format="boolean"/>
+        <attr name="stl_indicatorWithoutPadding" format="boolean"/>
+        <attr name="stl_indicatorInFront" format="boolean"/>
+        <attr name="stl_indicatorInterpolation" format="enum">
+            <enum name="smart" value="0"/>
+            <enum name="linear" value="1"/>
+        </attr>
+        <attr name="stl_indicatorGravity" format="enum">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="center" value="2"/>
+        </attr>
+        <attr name="stl_indicatorColor" format="color"/>
+        <attr name="stl_indicatorColors" format="reference"/>
+        <attr name="stl_indicatorThickness" format="dimension"/>
+        <attr name="stl_indicatorWidth" format="dimension">
+            <enum name="auto" value="-1"/>
+        </attr>
+        <attr name="stl_indicatorCornerRadius" format="dimension"/>
+        <attr name="stl_overlineColor" format="color"/>
+        <attr name="stl_overlineThickness" format="dimension"/>
+        <attr name="stl_underlineColor" format="color"/>
+        <attr name="stl_underlineThickness" format="dimension"/>
+        <attr name="stl_dividerColor" format="color"/>
+        <attr name="stl_dividerColors" format="reference"/>
+        <attr name="stl_dividerThickness" format="dimension"/>
+        <attr name="stl_defaultTabBackground" format="reference"/>
+        <attr name="stl_defaultTabTextAllCaps" format="boolean"/>
+        <attr name="stl_defaultTabTextColor" format="color|reference"/>
+        <attr name="stl_defaultTabTextSize" format="dimension"/>
+        <attr name="stl_defaultTabTextHorizontalPadding" format="dimension"/>
+        <attr name="stl_defaultTabTextMinWidth" format="dimension"/>
+        <attr name="stl_customTabTextLayoutId" format="reference"/>
+        <attr name="stl_customTabTextViewId" format="reference"/>
+        <attr name="stl_distributeEvenly" format="boolean"/>
+        <attr name="stl_clickable" format="boolean"/>
+        <attr name="stl_titleOffset" format="dimension">
+            <enum name="auto_center" value="-1"/>
+        </attr>
+        <attr name="stl_drawDecorationAfterTab" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="circle_progress_image_attrs">
+        <attr name="play_image" format="reference"/>
+        <attr name="stop_image" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SpringView">
+        <attr name="type">
+            <enum name="overlap" value="0"/>
+            <enum name="follow" value="1"/>
+        </attr>
+        <attr name="give">
+            <enum name="both" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="bottom" value="2"/>
+            <enum name="none" value="3"/>
+        </attr>
+        <attr name="header" format="reference"/>
+        <attr name="footer" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <!--进度条颜色-->
+    <declare-styleable name="CircleTextProgressbar">
+        <attr name="in_circle_color" format="color"/>
+    </declare-styleable>
+
+    <!-- 圆形头像的样式 -->
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+
+    <!--//底部选择器-->
+    <declare-styleable name="WheelView">
+        <attr name="unitHeight" format="dimension"/>
+        <attr name="itemNumber" format="integer"/>
+
+        <attr name="normalTextColor" format="color"/>
+        <attr name="normalTextSize" format="dimension"/>
+        <attr name="selectedTextColor" format="color"/>
+        <attr name="selectedTextSize" format="dimension"/>
+
+        <attr name="lineColor" format="color"/>
+        <attr name="lineHeight" format="dimension"/>
+
+        <attr name="maskHeight" format="dimension"/>
+        <attr name="noEmpty" format="boolean"/>
+        <attr name="isEnable" format="boolean"/>
+
+    </declare-styleable>
+
+   <!--新的时间选择器需要的-->
+    <declare-styleable name="CalendarPickerView">
+        <attr name="android:background"/>
+        <attr name="dividerColor" format="color"/>
+        <attr name="dayBackground" format="reference"/>
+        <attr name="dayTextColor" format="color"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="headerTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="calendar_cell">
+        <attr name="state_selectable" format="boolean" />
+        <attr name="state_current_month" format="boolean" />
+        <attr name="state_today" format="boolean" />
+        <attr name="state_range_first" format="boolean" />
+        <attr name="state_range_middle" format="boolean" />
+        <attr name="state_range_last" format="boolean" />
+        <attr name="state_highlighted" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RecyclerViewPager">
+        <attr name="triggerOffset" format="float" />
+        <attr name="flingFactor" format="float" />
+        <attr name="singlePageFling" format="boolean" />
+        <attr name="loopEnabled" format="boolean" />
+        <attr name="rvp_triggerOffset" format="float" />
+        <attr name="rvp_flingFactor" format="float" />
+        <attr name="rvp_singlePageFling" format="boolean" />
+        <attr name="rvp_inertia" format="boolean"/>
+        <attr name="rvp_millisecondsPerInch" format="float" />
+    </declare-styleable>
+
+
+</resources>

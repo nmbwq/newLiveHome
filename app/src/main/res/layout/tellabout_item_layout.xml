@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="19dp"
+        android:paddingTop="10dp"
+        android:paddingRight="19dp"
+        android:paddingBottom="10dp">
+
+
+        <!--5职位信息布局-->
+        <include
+            android:id="@+id/item_boss_head"
+            layout="@layout/item_boss_head"
+            android:visibility="gone"
+
+            ></include>
+
+        <!--普通内容-->
+        <include
+            android:id="@+id/only_content_layout"
+            layout="@layout/only_content_layout"
+            android:visibility="gone"></include>
+
+        <!--简历内容-->
+        <include
+            android:id="@+id/only_jianli_layout"
+            layout="@layout/only_jianli_layout"
+            android:visibility="gone"></include>
+
+        <!--我发出的拨打电话以及微信联系-->
+        <include
+            android:id="@+id/my_telephoneandwx_layout"
+            layout="@layout/my_telephoneandwx_layout"
+            android:visibility="gone"></include>
+
+        <!--别人发起的拨打电话以及微信联系-->
+        <include
+            android:id="@+id/other_telephoneandwx_layout"
+            layout="@layout/other_telephoneandwx_layout"></include>
+    </RelativeLayout>
+
+</RelativeLayout>

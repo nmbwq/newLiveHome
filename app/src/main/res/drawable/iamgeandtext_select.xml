@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@mipmap/kf_yjjb" />          <!--点击后的图片-->
+    <item android:state_focused="true" android:drawable="@mipmap/kf_yjjb" />
+    <item android:drawable="@mipmap/kf_wjj" />      <!--点击前的图片-->
+
+</selector>

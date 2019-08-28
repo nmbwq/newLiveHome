@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_share_huizhang">
+    <include layout="@layout/share_pic_title" />
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="105dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/onek"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <LinearLayout style="@style/ll_share_top">
+            <TextView
+                android:id="@+id/tv_kaibo_num_left"
+                style="@style/tv_kaibo_left"
+                android:text="0.1w" />
+            <ImageView
+                android:id="@+id/iv_kaibo_arrow"
+                android:layout_gravity="top"
+                style="@style/iv_kaibo_arrow" />
+
+            <TextView
+                android:id="@+id/tv_kaibo_num_right"
+                style="@style/tv_kaibo_right"
+                android:text="1000" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ll_share_bottom">
+
+            <TextView
+                android:id="@+id/tv_kaibo_month_left"
+                style="@style/tv_bottom_font"
+                android:text="04月开播主播" />
+
+            <TextView
+                android:id="@+id/tv_kaibo_month_right"
+                style="@style/tv_bottom_font"
+                android:layout_marginLeft="30dp"
+                android:text="03月开播主播" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="87dp"
+        android:background="@mipmap/twok"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout style="@style/ll_share_top">
+
+            <TextView
+                android:id="@+id/tv_fudao_num_left"
+                style="@style/tv_kaibo_left"
+                android:text="0.1w" />
+
+            <ImageView
+                android:id="@+id/iv_fudao_arrow"
+                style="@style/iv_kaibo_arrow" />
+
+            <TextView
+                android:id="@+id/tv_fudao_num_right"
+                style="@style/tv_kaibo_right"
+                android:text="1000" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ll_share_bottom">
+
+            <TextView
+                android:id="@+id/tv_fudao_month_left"
+                style="@style/tv_bottom_font"
+                android:paddingLeft="3dp"
+                android:text="04月辅导主播" />
+
+            <TextView
+                style="@style/tv_bottom_font"
+                android:layout_marginLeft="20dp"
+                android:text="03月辅导主播" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="103dp"
+        android:layout_marginLeft="46dp"
+        android:background="@mipmap/threek"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout style="@style/ll_share_top">
+
+            <TextView
+                android:id="@+id/tv_faqi_num_left"
+                style="@style/tv_kaibo_left"
+                android:text="0.1w" />
+
+            <ImageView
+                android:id="@+id/iv_faqi_arrow"
+                style="@style/iv_kaibo_arrow"
+                android:layout_gravity="top" />
+
+            <TextView
+                android:id="@+id/tv_faqi_num_right"
+                style="@style/tv_kaibo_right"
+                android:text="1000" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ll_share_bottom">
+
+            <TextView
+                android:id="@+id/tv_faqi_month_left"
+                style="@style/tv_bottom_font"
+                android:paddingLeft="3dp"
+                android:text="04月发起辅导次数" />
+            <TextView
+                android:id="@+id/tv_faqi_month_right"
+                style="@style/tv_bottom_font"
+                android:layout_marginLeft="2dp"
+                android:text="03月发起辅导次数" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/hz_biaoyu" />
+</LinearLayout>

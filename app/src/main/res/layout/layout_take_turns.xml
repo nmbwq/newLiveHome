@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/take_turns_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/take_turns_title"
+        android:layout_width="wrap_content"
+        android:background="@mipmap/bg_zx_lbt"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|left"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_6"
+        android:singleLine="true"
+        android:textColor="@color/text_color_light_white"
+        android:textSize="@dimen/text_size_28" />
+
+</FrameLayout>

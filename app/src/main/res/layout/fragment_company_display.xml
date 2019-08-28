@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_data"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_platform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/alpha_05_white"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="@dimen/dp_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:drawableLeft="@mipmap/gsjs_dian"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="入驻平台"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/platform"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/dp_10">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_star"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/alpha_05_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:drawableLeft="@mipmap/gsjs_dian"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="明星主播"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/star"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/dp_10"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_photos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/alpha_05_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:drawableLeft="@mipmap/gsjs_dian"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="公司相册"
+            android:textColor="@color/white" />
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/company_photos"
+            app:canLoop="true"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_23" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp_23"
+            android:layout_marginLeft="@dimen/dp_23"
+            android:layout_marginRight="@dimen/dp_23"
+            android:id="@+id/iv_one"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="166dp" />
+    </LinearLayout>
+    </LinearLayout>
+    <include
+        android:visibility="gone"
+        android:id="@+id/activity_empty_linshi1"
+        layout="@layout/activity_empty_linshi1" />
+</RelativeLayout>

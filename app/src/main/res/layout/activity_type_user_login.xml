@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/beijing_denglu"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/user_login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:layout_marginTop="32dp"
+           android:padding="15dp"
+            android:src="@mipmap/ic_land_back"
+            />
+
+        <ImageView
+            android:id="@+id/im1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@mipmap/icon_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公会管理神器"
+            style="@style/color_white_18"
+            android:layout_below="@+id/im1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="登录即代表您同意"
+               style="@style/color_white_10"
+               android:gravity="center_vertical"
+               />
+            <TextView
+                android:id="@+id/tv_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《直播之家服务和隐私协议》"
+                android:textSize="10sp"
+                android:textColor="#d0a76c"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            >
+
+            <ImageView
+                android:id="@+id/im_weixin_login"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/weixin_denglu"
+                />
+            <ImageView
+                android:id="@+id/im_zhanghao_login"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/zhanghao_denglu"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

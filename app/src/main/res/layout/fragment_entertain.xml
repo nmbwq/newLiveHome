@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <shangri.example.com.shangri.ui.view.SpringView
+        android:id="@+id/news_entertain_springview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <com.bigkoo.convenientbanner.ConvenientBanner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:canLoop="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_10"
+                    android:background="@color/bg_color_gray"
+                    android:visibility="invisible" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_cultivate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"></android.support.v7.widget.RecyclerView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/news_entertain_irv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+                <ImageButton
+                    android:id="@+id/float_toTop"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    android:background="@mipmap/huidaodingbu"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/layout_network_break"
+                    layout="@layout/layout_network_break"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </shangri.example.com.shangri.ui.view.SpringView>
+
+
+</RelativeLayout>

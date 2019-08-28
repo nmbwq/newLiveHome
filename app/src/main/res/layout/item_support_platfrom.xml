@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_news_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+   >
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+
+       <!--<shangri.example.com.shangri.ui.view.CircleImageView-->
+           <!--android:id="@+id/im_image"-->
+           <!--android:layout_width="23dp"-->
+           <!--android:layout_height="23dp"-->
+           <!--android:scaleType="centerCrop"-->
+           <!--android:src="@mipmap/bg_touxiang"-->
+           <!--android:layout_centerHorizontal="true"-->
+           <!--/>-->
+
+
+
+       <shangri.example.com.shangri.ui.view.RoundImageView
+           android:id="@+id/im_image"
+           android:layout_width="23dp"
+           android:layout_height="23dp"
+           android:scaleType="centerCrop"
+           android:src="@mipmap/bg_touxiang"
+           android:layout_centerHorizontal="true" />
+
+
+
+       <TextView
+           android:id="@+id/tv1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/im_image"
+           android:layout_centerHorizontal="true"
+           android:text="菠萝街"
+           android:textColor="#999999"
+           android:textSize="9sp"
+           android:layout_marginTop="6dp"
+           />
+
+
+
+
+   </RelativeLayout>
+
+
+
+</RelativeLayout>

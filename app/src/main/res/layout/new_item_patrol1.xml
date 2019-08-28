@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#04ffffff"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_info"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true">
+
+
+            <shangri.example.com.shangri.ui.view.CircleImageView
+                android:id="@+id/im_photo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/bg_touxiang" />
+
+            <ImageView
+                android:id="@+id/im_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/yhfl_ysc" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/color_999999_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/rl_info"
+            android:text="直播小边" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/color_999999_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/rl_info"
+            android:text="18758581557" />
+
+
+        <TextView
+            android:id="@+id/tv_number"
+            style="@style/color_999999_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:text="+10" />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/color_999999_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_number"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="2012-12-12" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

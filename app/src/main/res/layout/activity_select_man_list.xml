@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shangri.example.com.shangri.ui.view.IMMListenerRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise"
+    android:id="@+id/rl_top"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_appbar_layout_black">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+
+            <ImageView
+                android:id="@+id/setting_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="@dimen/dp_15"
+                android:paddingTop="32dp"
+                android:src="@mipmap/ic_land_back" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_marginTop="32dp"
+                android:gravity="center_vertical"
+                android:text="选择执行人"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_34" />
+
+            <ImageView
+                android:id="@+id/im_sousuo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_marginTop="32dp"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="@dimen/dp_15"
+                android:src="@mipmap/ic_zx_search"
+                />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <shangri.example.com.shangri.ui.view.SpringView
+        android:id="@+id/sv_partol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        >
+
+        <shangri.example.com.shangri.ui.view.MyScrollview
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:paddingLeft="19dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="11dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/xuanze_zhixingren"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_type_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="目标剩余量"
+                                style="@style/color_white_13"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_sum_number1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:text="100000"
+                                android:textColor="#d0a76c"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/color_999999_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="本期任务总目标" />
+
+                            <TextView
+                                android:id="@+id/tv_sum_number"
+                                style="@style/color_999999_15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="100,000," />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appbar"
+                    android:orientation="horizontal"
+
+
+                    >
+                    <RelativeLayout
+                        android:id="@+id/rl_manager"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="16dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_manager"
+                                style="@style/color_d0a76c_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="按上期完成业绩排序" />
+
+                            <TextView
+                                android:id="@+id/tv_manager_line"
+                                android:layout_width="30dp"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="3dp"
+                                android:background="#d0a76c" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ll_anchor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="16dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_anchor"
+                                style="@style/color_999999_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="按上期完成百分比排序" />
+
+                            <TextView
+                                android:id="@+id/tv_anchor_line"
+                                android:layout_width="30dp"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="3dp"
+                                android:background="#d0a76c"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <shangri.example.com.shangri.ui.view.ListViewForScrollView
+                    android:id="@+id/rv_partol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+        </shangri.example.com.shangri.ui.view.MyScrollview>
+
+    </shangri.example.com.shangri.ui.view.SpringView>
+
+    <LinearLayout
+        android:id="@+id/search_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/im_image"
+            android:layout_width="194dp"
+            android:layout_height="136dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/no_empty" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="您查找的公司不存在呢，请重新查找"
+            android:textColor="@color/text_color_little_black"
+            android:textSize="@dimen/text_size_32" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="#1a1a1a"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="共"
+                android:gravity="center_vertical"
+                style="@style/color_white_14"
+                />
+            <TextView
+                android:id="@+id/botom_people_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:gravity="center_vertical"
+                style="@style/color_d0a76c_14"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="名人员"
+                android:gravity="center_vertical"
+                style="@style/color_white_14"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="合计："
+                android:gravity="center_vertical"
+                style="@style/color_white_14"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/bottom_sum_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:gravity="center_vertical"
+                style="@style/color_d0a76c_14"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_fabu"
+            android:layout_width="79dp"
+            android:layout_height="match_parent"
+            android:text="发布"
+            style="@style/color_white_14"
+            android:gravity="center"
+            android:background="#d0a76c"
+            />
+        
+
+    </LinearLayout>
+
+</shangri.example.com.shangri.ui.view.IMMListenerRelativeLayout>

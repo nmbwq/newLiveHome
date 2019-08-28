@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    >
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:background="@mipmap/bg_juxing"
+        android:id="@+id/video_news_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="144dp"
+            android:layout_height="107dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+           >
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/iv_consulation_item"
+                android:layout_width="144dp"
+                android:layout_height="107dp"
+
+                android:src="@mipmap/jiazaitu_small" />
+
+            <ImageView
+                android:id="@+id/im_is_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/yinpin" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="107dp"
+            android:layout_alignParentLeft="true"
+
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/rl1">
+
+            <TextView
+                android:id="@+id/tv_consultaton_titel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="6dp"
+                android:text="如何优雅又不是面子"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_28" />
+
+
+            <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/tag_fl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_consultaton_titel"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp">
+
+            </com.zhy.view.flowlayout.TagFlowLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:padding="6dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ic_zx_pageview" />
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/entertain_news_like_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="83w"
+                            android:textColor="@color/text_color_light_black"
+                            android:textSize="@dimen/text_size_22" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+
+                    android:padding="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:padding="6dp"
+                            android:id="@+id/iv_dian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/icon_good" />
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/entertain_news_view_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:text="3958"
+                            android:textColor="@color/text_color_light_black"
+                            android:textSize="@dimen/text_size_22" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_dianji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+
+                    <shangri.example.com.shangri.ui.view.CircleImageView
+                        android:id="@+id/im_photo"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/im_up"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/bg_touxiang" />
+
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/color_white_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/im_photo"
+                        android:layout_centerVertical="true"
+                        android:text="主播姓名" />
+
+                    <TextView
+                        android:id="@+id/tv_id"
+                        style="@style/color_white_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_name"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/im_photo"
+                        android:text="ID: 3215469875"
+                        android:visibility="gone"
+                        />
+
+
+                    <TextView
+                        style="@style/color_999999_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="管理员" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+</LinearLayout>

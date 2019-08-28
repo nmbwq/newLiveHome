@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_heise"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_anchor_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/bg_juxing"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp">
+
+                <TextView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="平台ID" />
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:text="2356142" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@mipmap/bg_juxing">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#401a1a1a" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@mipmap/bg_juxing"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp">
+
+                <TextView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="平台昵称" />
+
+                <TextView
+                    android:id="@+id/tv_plantfrom_name"
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:text="2356142" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_manager_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/manager_receive_task"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/bg_juxing"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp">
+
+                <TextView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="收到的任务" />
+
+                <ImageView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_wd_more" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@mipmap/bg_juxing">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#401a1a1a" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/manager_push_task"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@mipmap/bg_juxing"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp">
+
+                <TextView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="发布的任务" />
+
+                <ImageView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_wd_more" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@mipmap/bg_juxing">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#401a1a1a" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/manager_push_coach"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@mipmap/bg_juxing"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp">
+
+                <TextView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="发布的辅导" />
+
+                <ImageView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_wd_more" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_guild_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/guild_push_task"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/bg_juxing"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp">
+
+                <TextView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="发布的任务" />
+
+                <ImageView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_wd_more" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@mipmap/bg_juxing">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#401a1a1a" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/guild_push_coach"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@mipmap/bg_juxing"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp">
+
+                <TextView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="发布的辅导" />
+
+                <ImageView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_wd_more" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_anchor_task_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/anchor_receive_task"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/bg_juxing"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp">
+
+                <TextView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="收到的任务" />
+
+                <ImageView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_wd_more" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@mipmap/bg_juxing">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#401a1a1a" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/anchor_receive_coach"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@mipmap/bg_juxing"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp">
+
+                <TextView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="收到的辅导" />
+
+                <ImageView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_wd_more" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_anchor_baobiao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/bg_juxing"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp">
+
+                <TextView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="数据报表" />
+
+                <ImageView
+                    style="@style/color_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_wd_more" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

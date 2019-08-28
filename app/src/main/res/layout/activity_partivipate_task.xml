@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@mipmap/bg_heise"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_appbar_layout_black"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/head"
+        android:layout_toEndOf="@+id/head">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+
+            <ImageView
+                android:id="@+id/setting_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_marginTop="32dp"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="@dimen/dp_15"
+                android:src="@mipmap/ic_land_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_marginTop="32dp"
+                android:gravity="center_vertical"
+                android:text="发布任务"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_32" />
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_marginTop="32dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:text="完成"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/appbar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_guild1"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/bg_color_setting"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:text="公会名称："
+                android:textSize="14dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tv_guild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toLeftOf="@+id/im_icon1"
+                android:text="请选择公会"
+                android:textColor="@color/text_color_little_black"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/im_icon1"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="30dp"
+                android:paddingLeft="20dp"
+                android:src="@mipmap/ic_wd_more" />
+
+            <TextView
+                android:id="@+id/tv_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_toLeftOf="@+id/im_icon1"
+                android:text=""
+                android:textSize="14dp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_color_little_dark_gray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_guild2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bg_color_setting"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:text="活动主题："
+                android:textSize="14dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/iv2"
+                android:background="@null"
+                android:maxLength="15"
+                android:gravity="right"
+                android:hint="请输入活动主题（15字以内）"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_color_little_black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_anchors_name"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_toLeftOf="@+id/im_icon2"
+                android:text=""
+                android:textSize="14dp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_color_little_dark_gray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_guild3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color_setting"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:text="活动规则："
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentLeft="true" />
+
+            <EditText
+                android:id="@+id/et3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:maxLength="200"
+                android:layout_marginTop="0.5dp"
+                android:paddingTop="10dp"
+                android:gravity="top"
+                android:hint="请输入活动内容（200字以内）"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_color_little_black"
+                android:textSize="13sp"
+                android:layout_below="@+id/tv1" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/LinearLayout2"
+            android:background="@color/bg_color_setting"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总魅力值增长目标: "
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150000"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_color_task"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_color_little_dark_gray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_guild4"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bg_color_setting"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:text="开始时间："
+                android:textSize="14dp"
+                android:drawableLeft="@mipmap/renwu_kaishi"
+                android:drawablePadding="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/im_icon4"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="30dp"
+                android:paddingLeft="20dp"
+                android:src="@mipmap/ic_wd_more" />
+
+            <TextView
+                android:id="@+id/tv_youxiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_toLeftOf="@+id/im_icon4"
+                android:text="请选择开始时间"
+                android:textSize="14dp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_color_little_dark_gray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_guild5"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/bg_color_setting"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:text="结束时间："
+                android:textSize="14dp"
+                android:drawableLeft="@mipmap/renwu_jiesu"
+                android:drawablePadding="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/im_icon5"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="30dp"
+                android:paddingLeft="20dp"
+                android:src="@mipmap/ic_wd_more" />
+
+            <TextView
+                android:id="@+id/tv_buzu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_toLeftOf="@+id/im_icon5"
+                android:text="请选择结束时间"
+                android:textSize="14dp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_comment"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/LinearLayout2"
+            android:layout_marginTop="10dp"
+            android:background="@color/bg_color_setting"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的魅力值增长目标: "
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/tv_comment1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv4"
+                android:background="@null"
+                android:hint="请设置你的任务目标"
+                android:text=""
+                android:inputType="number"
+                android:digits="1234567890"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_color_little_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:text="修改"
+                android:textColor="@color/text_color_task"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_color_little_dark_gray" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/LinearLayout2"
+            android:background="@color/bg_color_setting"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已完成: "
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150000"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_color_item_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/bg_color_item_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/time_disms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:paddingTop="20dp"
+                android:paddingLeft="30dp"
+                android:textSize="16sp"
+                android:text="取消" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/bg_color_little_dark_gray" />
+
+            <TextView
+                android:id="@+id/time_save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:paddingRight="30dp"
+                android:gravity="right"
+                android:textSize="16sp"
+                android:textColor="@color/text_color_audit"
+                android:text="确定" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color_item_bg"
+            android:orientation="horizontal">
+
+            <shangri.example.com.shangri.ui.view.WheelView
+                android:id="@+id/dialog_year"
+                style="@style/wheel_style"
+                app:itemNumber="3"
+                app:lineColor="@color/bg_color_little_dark_gray"
+                app:maskHeight="48dp"
+                app:noEmpty="true"
+                app:normalTextColor="#999999"
+                app:normalTextSize="11sp"
+                app:selectedTextColor="#FFFFFF"
+                app:selectedTextSize="13sp"
+                app:unitHeight="50dp" />
+
+            <shangri.example.com.shangri.ui.view.WheelView
+                android:id="@+id/dialog_month"
+                style="@style/wheel_style"
+                app:itemNumber="3"
+                app:lineColor="@color/bg_color_little_dark_gray"
+                app:maskHeight="48dp"
+                app:noEmpty="true"
+                app:normalTextColor="#999999"
+                app:normalTextSize="11sp"
+                app:selectedTextColor="#FFFFFFFF"
+                app:selectedTextSize="11sp"
+                app:unitHeight="50dp" />
+
+            <shangri.example.com.shangri.ui.view.WheelView
+                android:id="@+id/dialog_data"
+                app:itemNumber="3"
+                app:lineColor="@color/bg_color_little_dark_gray"
+                app:maskHeight="48dp"
+                app:noEmpty="true"
+                app:normalTextColor="#999999"
+                app:normalTextSize="11sp"
+                app:selectedTextColor="#FFFFFFFF"
+                app:selectedTextSize="11sp"
+                app:unitHeight="50dp"
+                style="@style/wheel_style" />
+
+            <shangri.example.com.shangri.ui.view.WheelView
+                android:id="@+id/dialog_data1"
+                app:itemNumber="3"
+                app:lineColor="@color/bg_color_little_dark_gray"
+                app:maskHeight="48dp"
+                app:noEmpty="true"
+                app:normalTextColor="#999999"
+                app:normalTextSize="11sp"
+                app:selectedTextColor="#FFFFFFFF"
+                app:selectedTextSize="11sp"
+                app:unitHeight="50dp"
+                style="@style/wheel_style" />
+
+            <shangri.example.com.shangri.ui.view.WheelView
+                android:id="@+id/dialog_data2"
+                app:itemNumber="3"
+                app:lineColor="@color/bg_color_little_dark_gray"
+                app:maskHeight="48dp"
+                app:noEmpty="true"
+                app:normalTextColor="#999999"
+                app:normalTextSize="11sp"
+                app:selectedTextColor="#FFFFFFFF"
+                app:selectedTextSize="11sp"
+                app:unitHeight="50dp"
+                style="@style/wheel_style" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/head"
+        android:background="@color/toast_bg" />
+
+</RelativeLayout>

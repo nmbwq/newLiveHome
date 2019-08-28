@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_jianbian"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_11"
+        android:visibility="gone"
+        android:background="@color/bg_color_little_gray" />
+
+    <TextView
+        android:id="@+id/take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="保存到草稿箱"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_34" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_color_little_dark_gray" />
+
+    <TextView
+        android:id="@+id/select_from_album"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="不保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_34" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"
+        android:background="@color/bg_color_little_dark_gray" />
+
+    <TextView
+        android:id="@+id/save_photo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/save_photo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_34" />
+
+</LinearLayout>

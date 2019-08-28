@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/im_shareimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:indeterminateOnly="false"
+        android:max="100" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pb_progress">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.lzyzsd.jsbridge.BridgeWebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:gravity="center_horizontal" />
+
+            <include
+                android:id="@+id/layout_network_break"
+                layout="@layout/layout_network_break"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/webview_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:src="@mipmap/icon_back2" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

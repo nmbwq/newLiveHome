@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 登录模块 -->
+    <style name="et_phone_style">//输入手机号样式 登录
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/et_underline_selector</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">11</item>
+        <item name="android:textCursorDrawable">@drawable/color_cursor</item>
+
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@color/text_color_light_black</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">@dimen/dp_10</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <style name="et_password">//输入密码样式 登录
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">@dimen/dp_10</item>
+        <item name="android:textSize">@dimen/text_size_28</item>
+        <item name="android:layout_alignLeft">@+id/this_head</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:textCursorDrawable">@drawable/color_cursor</item>
+        <item name="android:textColorHint">@color/text_color_light_black</item>
+        <item name="android:background">@drawable/et_underline_selector</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="wheel_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+</resources>

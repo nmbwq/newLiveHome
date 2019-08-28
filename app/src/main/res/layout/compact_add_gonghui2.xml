@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mengban_1"
+    android:paddingLeft="37dp"
+    android:paddingRight="37dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:id="@+id/ll_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_delete"
+            android:background="@drawable/color_dialog_cancle_shape16"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="25dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="25dp">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="上传简历"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="18668121550"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_commit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                   >
+
+
+                    <TextView
+                        android:id="@+id/tv_cancle"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/bg_kuang2"
+                        android:gravity="center"
+                        android:text="取消"
+                        android:textColor="#cf9a57"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_next"
+                        style="@style/color_white_14"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/bg_kuang1"
+                        android:gravity="center"
+                        android:text="确定" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_commit"
+                    style="@style/color_white_14"
+                    android:layout_width="120dp"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="8dp"
+                    android:background="@mipmap/bg_kuang1"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

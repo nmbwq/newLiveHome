@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/item_choose"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:background="@drawable/border_gray"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/dp_11"
+            android:background="@mipmap/ic_wdsz_follow"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:gravity="top"
+            android:text="@string/takephoto_hint"
+            android:textColor="@color/text_color_little_gray"
+            android:textSize="@dimen/text_size_24" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_pic"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/item_pic_delete"
+        android:layout_width="@dimen/px_33"
+        android:layout_height="@dimen/px_33"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/ic_zxss_close" />
+</RelativeLayout>

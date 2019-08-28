@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/pop" />
+
+
+        <ImageView
+            android:id="@+id/im_state"
+            android:layout_width="48dp"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/sdj_cj" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95dp"
+            android:text="初级经纪人"
+            android:textColor="#f0cd97"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="183dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="255dp"
+            android:background="@drawable/color_dialog_commit_shape12"
+            android:gravity="center"
+            android:text="激活等级身份"
+            android:textColor="#d0a76c"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:padding="5dp"
+        android:src="@mipmap/sjd_gb" />
+</RelativeLayout>

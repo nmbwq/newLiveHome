@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_juxing"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="68dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/fuwu" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:text="哎呀，您的服务已经到期啦！"
+                android:textColor="#c5c3c3"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="9dp"
+                android:text="到期时间：2018.08.08"
+                android:textColor="#c5c3c3"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="9dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="我要继续使用"
+                android:textColor="#cf9a57"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

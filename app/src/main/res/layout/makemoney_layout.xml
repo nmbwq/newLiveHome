@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#161616">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:id="@+id/im_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+
+        <ImageView
+            android:id="@+id/im_image_erweima"
+            android:layout_width="106dp"
+            android:layout_height="107dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_appbarlayout"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:background="@mipmap/bbye_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp"
+                    android:text="波币余额"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_bb_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/tv_exchange_Money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="可提现0元"
+                    android:textColor="#ff9a9a"
+                    android:textSize="10sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_draw"
+                    android:layout_width="111dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/color_dialog_commit_shape"
+                    android:gravity="center"
+                    android:text="立即提现"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_task_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/activity_user_benefits_task2"></include>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
